@@ -15,6 +15,7 @@ import SignInPage from './components/SignInPage';
 import ForceChangePasswordView from './components/ForceChangePasswordView';
 import { syncFullDbWithServer, syncLocalCacheWithServer, mirrorServerDbToLocal } from './utils/persistentStorage';
 import { testFirestoreConnection, signInWithGoogle, signOutUser } from './firebase';
+import { safeLoginRequest, authenticateLocally } from './utils/authFallback';
 
 interface UserSession {
   role: 'super_admin' | 'admin' | 'counsellor' | 'student';
@@ -233,16 +234,12 @@ export default function App() {
     }, 1750);
 
     const p5 = setTimeout(async () => {
-      // Authenticate via API to retrieve the real database student
+      // Authenticate via API to retrieve the real database student with local fallback
       const userToLogin = username ? username.trim() : 'student';
       try {
-        const res = await fetch('/api/login', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username: userToLogin, password: 'student123' })
-        });
-        if (res.ok) {
-          const authData = await res.json();
+        const result = await safeLoginRequest(userToLogin, 'student123');
+        if (result.success && result.data) {
+          const authData = result.data;
           const studentSession: UserSession = {
             role: authData.role,
             username: authData.username,
@@ -453,20 +450,12 @@ export default function App() {
     setLoginLoading(true);
     setIsTyping(false);
 
-    fetch('/api/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username: username.trim(), password })
-    })
-      .then(res => {
-        if (!res.ok) {
-          return res.json().then(data => {
-            throw new Error(data.error || 'Authentication failed');
-          });
+    safeLoginRequest(username.trim(), password)
+      .then(result => {
+        if (!result.success || !result.data) {
+          throw new Error(result.error || 'Authentication failed');
         }
-        return res.json();
-      })
-      .then(data => {
+        const data = result.data;
         const newSession: UserSession = {
           role: data.role,
           username: data.username,

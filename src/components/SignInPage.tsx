@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import NexoraLogo from './NexoraLogo';
 import { signInWithGoogle, sendFirebasePasswordReset } from '../firebase';
+import { safeLoginRequest, authenticateLocally } from '../utils/authFallback';
 
 interface SignInPageProps {
   onBackToHome: () => void;
@@ -38,6 +39,7 @@ export default function SignInPage({
       ? 'Account created! Your temporary password has been pre-filled. Click Sign In to proceed to password setup.'
       : ''
   );
+  const [showDomainAuthGuide, setShowDomainAuthGuide] = useState<boolean>(false);
 
   // Biometric state
   const [biometricScanning, setBiometricScanning] = useState<boolean>(false);
@@ -128,25 +130,17 @@ export default function SignInPage({
 
     setLoginLoading(true);
     setLoginError('');
+    setShowDomainAuthGuide(false);
 
     try {
-      const res = await fetch('/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          username: username.trim(),
-          password: password.trim()
-        })
-      });
-
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error(data.error || 'Invalid credentials.');
+      const result = await safeLoginRequest(username.trim(), password.trim());
+      if (!result.success || !result.data) {
+        throw new Error(result.error || 'Invalid credentials. Please verify your login details.');
       }
 
       setLoginSuccess(true);
       setTimeout(() => {
-        onLoginSuccess(data);
+        onLoginSuccess(result.data);
       }, 500);
     } catch (err: any) {
       setLoginError(err.message || 'Authentication failed. Please verify your credentials.');
@@ -160,6 +154,7 @@ export default function SignInPage({
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
     setLoginError('');
+    setShowDomainAuthGuide(false);
     try {
       const { user, profile } = await signInWithGoogle();
       setLoginSuccess(true);
@@ -180,7 +175,11 @@ export default function SignInPage({
         });
       }, 500);
     } catch (err: any) {
-      if (err.code !== 'auth/popup-closed-by-user') {
+      if (err.code === 'auth/unauthorized-domain') {
+        const domain = typeof window !== 'undefined' ? window.location.hostname : 'your domain';
+        setLoginError(`Firebase: Error (auth/unauthorized-domain). Domain "${domain}" is not added to Firebase Authorized Domains.`);
+        setShowDomainAuthGuide(true);
+      } else if (err.code !== 'auth/popup-closed-by-user') {
         setLoginError(err.message || 'Google sign-in could not be completed.');
       }
     } finally {
@@ -193,6 +192,7 @@ export default function SignInPage({
     setBiometricScanning(true);
     setBiometricStage('scanning');
     setLoginError('');
+    setShowDomainAuthGuide(false);
 
     setTimeout(() => {
       setBiometricStage('verifying');
@@ -202,14 +202,11 @@ export default function SignInPage({
           setBiometricScanning(false);
           // Auto login as Aryan Sharma for demo touch
           try {
-            const res = await fetch('/api/login', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ username: 'aryan@example.com', password: 'student123' })
-            });
-            const data = await res.json();
-            if (res.ok) {
-              onLoginSuccess(data);
+            const result = await safeLoginRequest('aryan@example.com', 'student123');
+            if (result.success && result.data) {
+              onLoginSuccess(result.data);
+            } else {
+              setLoginError('Biometric authentication failed.');
             }
           } catch (e) {
             setLoginError('Biometric authentication failed.');
@@ -719,6 +716,34 @@ export default function SignInPage({
                   <div className="p-3 bg-rose-50 border border-rose-200 text-rose-700 text-xs rounded-2xl flex items-center gap-2">
                     <AlertCircle className="h-4 w-4 shrink-0 text-rose-500" />
                     <span>{loginError}</span>
+                  </div>
+                )}
+
+                {/* Firebase Domain Authorization Guide (if auth/unauthorized-domain occurs) */}
+                {showDomainAuthGuide && (
+                  <div className="p-3.5 bg-amber-50 border border-amber-200 text-amber-900 text-xs rounded-2xl space-y-2">
+                    <div className="flex items-center gap-2 font-bold text-amber-800">
+                      <HelpCircle className="h-4 w-4 shrink-0 text-amber-600" />
+                      <span>How to enable Google Sign-In for this domain:</span>
+                    </div>
+                    <ol className="list-decimal list-inside text-[11px] space-y-1 text-amber-800 pl-1">
+                      <li>Open <a href="https://console.firebase.google.com" target="_blank" rel="noreferrer" className="underline font-bold text-[#0057D9]">Firebase Console</a>.</li>
+                      <li>Go to <strong>Authentication</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Authorized domains</strong>.</li>
+                      <li>Click <strong>Add domain</strong> and enter: <code className="bg-amber-100 px-1 py-0.5 rounded font-mono font-bold text-amber-950">{typeof window !== 'undefined' ? window.location.hostname : 'your-domain'}</code></li>
+                    </ol>
+                    <div className="pt-2 border-t border-amber-200/60 flex items-center justify-between text-[11px]">
+                      <span className="text-amber-700">Need immediate demo access?</span>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const demo = authenticateLocally('aryan@example.com', 'student123');
+                          if (demo) onLoginSuccess(demo);
+                        }}
+                        className="font-bold text-[#0057D9] hover:underline cursor-pointer"
+                      >
+                        Skip &rarr; Continue as Student Demo
+                      </button>
+                    </div>
                   </div>
                 )}
 
