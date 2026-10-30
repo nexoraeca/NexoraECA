@@ -1,0 +1,2388 @@
+{
+  "registrations": [
+    {
+      "id": "REG-901",
+      "fullName": "Priya Patel",
+      "mobile": "9123456789",
+      "email": "priya@example.com",
+      "gender": "Female",
+      "dob": "2008-08-15",
+      "college12th": "St. Xavier College, Ahmedabad",
+      "board": "GSHEB",
+      "marks12th": 88,
+      "address": "12, Satellite Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "interestedCourse": "B.Tech",
+      "preferredState": "Gujarat",
+      "preferredCollege": "Ganpat University",
+      "status": "approved",
+      "submittedAt": "2026-06-29T10:00:00Z"
+    },
+    {
+      "id": "REG-276",
+      "status": "pending",
+      "submittedAt": "2026-09-28T07:18:55.220Z",
+      "fullName": "Ravi Teja Verma",
+      "mobile": "9848022338",
+      "email": "raviteja.test@example.com",
+      "dob": "2007-06-15",
+      "college12th": "Narayana Junior College, Vijayawada",
+      "board": "State Board",
+      "score": "96.4",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "interestedProgram": "B.Tech Computer Science & AI",
+      "preferredState": "Telangana",
+      "preferredCollege": "Malla Reddy University",
+      "marks12th": 0
+    },
+    {
+      "id": "REG-436",
+      "status": "approved",
+      "submittedAt": "2026-09-28T07:19:05.305Z",
+      "fullName": "Ravi Teja Verma",
+      "mobile": "9848022338",
+      "email": "raviteja.test@example.com",
+      "dob": "2007-06-15",
+      "college12th": "Narayana Junior College, Vijayawada",
+      "board": "State Board",
+      "score": "96.4",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "interestedProgram": "B.Tech Computer Science & AI",
+      "preferredState": "Telangana",
+      "preferredCollege": "Malla Reddy University",
+      "marks12th": 0
+    },
+    {
+      "id": "REG-497",
+      "status": "approved",
+      "submittedAt": "2026-09-28T09:03:36.373Z",
+      "fullName": "Test Candidate",
+      "email": "test.candidate@gmail.com",
+      "mobile": "9876543210",
+      "courseCategory": "Engineering",
+      "course": "B.Tech CSE",
+      "dob": "2005-04-12",
+      "gender": "Male",
+      "tenthMarks": "94%",
+      "twelfthMarks": "96%",
+      "preferredState": "Gujarat",
+      "address": "Ahmedabad",
+      "marks12th": 0
+    },
+    {
+      "id": "REG-130",
+      "status": "approved",
+      "submittedAt": "2026-09-28T09:03:47.032Z",
+      "fullName": "Test Candidate",
+      "email": "test.candidate@gmail.com",
+      "mobile": "9876543210",
+      "courseCategory": "Engineering",
+      "course": "B.Tech CSE",
+      "dob": "2005-04-12",
+      "gender": "Male",
+      "marks12th": 96,
+      "preferredState": "Gujarat",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": "REG-252",
+      "status": "approved",
+      "submittedAt": "2026-10-02T07:50:20.702Z",
+      "fullName": "Test User",
+      "mobile": "9999988888",
+      "email": "testuser99@example.com",
+      "marks12th": 95,
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "interestedCourse": "B.Tech Computer Science & AI"
+    }
+  ],
+  "students": [
+    {
+      "id": "EDU-2026-001",
+      "fullName": "Aryan Sharma",
+      "email": "aryan@example.com",
+      "mobile": "9876543210",
+      "gender": "Male",
+      "dob": "2008-04-12",
+      "college12th": "Delhi Public School",
+      "marks12th": 92,
+      "interestedCourse": "B.Tech",
+      "preferredState": "Telangana",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Prof. Sandeep Rao",
+      "counsellorNotes": "Excellent student, highly interested in computer engineering. Assigned state aptitude test.",
+      "admissionStatus": "Exam Completed"
+    },
+    {
+      "id": "EDU-2026-0367",
+      "fullName": "Priya Patel",
+      "email": "priya@example.com",
+      "mobile": "9123456789",
+      "gender": "Female",
+      "dob": "2008-08-15",
+      "college12th": "St. Xavier College, Ahmedabad",
+      "marks12th": 88,
+      "interestedCourse": "B.Tech",
+      "preferredState": "Gujarat",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Trained Admission Counsellor",
+      "counsellorNotes": "Approved from registration portal. Automatically assigned general aptitude exam.",
+      "admissionStatus": "Counseling"
+    },
+    {
+      "id": "EDU-2026-496",
+      "fullName": "Ravi Teja Verma",
+      "email": "raviteja.test@example.com",
+      "mobile": "9848022338",
+      "gender": "Not specified",
+      "dob": "2007-06-15",
+      "college12th": "Narayana Junior College, Vijayawada",
+      "marks12th": 0,
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredState": "Telangana",
+      "preferredCollege": "Malla Reddy University",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Trained Admission Counsellor",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "admissionStatus": "Counseling",
+      "registeredAt": "2026-09-28T07:19:05.306Z"
+    },
+    {
+      "id": "EDU-2026-571",
+      "fullName": "Test Candidate",
+      "email": "test.candidate@gmail.com",
+      "mobile": "9876543210",
+      "gender": "Male",
+      "dob": "2005-04-12",
+      "college12th": "",
+      "marks12th": 0,
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredState": "Gujarat",
+      "preferredCollege": "",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Trained Admission Counsellor",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "admissionStatus": "Counseling",
+      "registeredAt": "2026-09-28T09:03:36.373Z"
+    },
+    {
+      "id": "EDU-2026-527",
+      "fullName": "Test Candidate",
+      "email": "test.candidate@gmail.com",
+      "mobile": "9876543210",
+      "gender": "Male",
+      "dob": "2005-04-12",
+      "college12th": "",
+      "marks12th": 96,
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredState": "Gujarat",
+      "preferredCollege": "",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Trained Admission Counsellor",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "admissionStatus": "Counseling",
+      "registeredAt": "2026-09-28T09:03:47.032Z"
+    },
+    {
+      "id": "EDU-2026-436",
+      "fullName": "Test User",
+      "email": "testuser99@example.com",
+      "mobile": "9999988888",
+      "gender": "Not specified",
+      "dob": "",
+      "college12th": "",
+      "marks12th": 95,
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredState": "Telangana",
+      "preferredCollege": "",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Trained Admission Counsellor",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "admissionStatus": "Counseling",
+      "registeredAt": "2026-10-02T07:50:20.702Z"
+    },
+    {
+      "id": "EDU-2026-404",
+      "fullName": "Bharathsathyasaijanga26",
+      "email": "bharathsathyasaijanga26@gmail.com",
+      "mobile": "9876543210",
+      "marks12th": 92,
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredState": "Telangana",
+      "admissionStatus": "Applied Online",
+      "assignedExamId": "exam-aptitude-01",
+      "assignedCounsellor": "Dr. Lakshmi Prasad"
+    }
+  ],
+  "users": [
+    {
+      "id": "EDU-2026-001",
+      "username": "STUDENT123",
+      "password": "password123",
+      "role": "student",
+      "studentId": "EDU-2026-001",
+      "status": "active"
+    },
+    {
+      "id": "ADMIN-001",
+      "username": "admin",
+      "password": "Bharath@123",
+      "role": "admin",
+      "fullName": "Prof. Rajesh Sengupta (Admissions Admin)",
+      "email": "admin@educonnectindia.in",
+      "status": "active"
+    },
+    {
+      "id": "user-1786892124687",
+      "username": "priyapatel36",
+      "password": "pass1428",
+      "role": "student",
+      "studentId": "EDU-2026-0367",
+      "status": "active"
+    },
+    {
+      "id": "SUPERADMIN-001",
+      "username": "nexoraeca@gmail.com",
+      "password": "superadmin123",
+      "role": "super_admin",
+      "fullName": "Dr. R. K. Varma (Chief Executive & Super Admin)",
+      "email": "nexoraeca@gmail.com",
+      "status": "active",
+      "studentId": "EDU-2026-404"
+    },
+    {
+      "id": "COUNSEL-001",
+      "username": "counsellor",
+      "password": "counsel123",
+      "role": "counsellor",
+      "fullName": "Dr. Lakshmi Prasad (Senior Academic Counselor)",
+      "email": "lakshmi.prasad@educonnect.in",
+      "status": "active"
+    },
+    {
+      "id": "COUNSEL-002",
+      "username": "counsellor2",
+      "password": "counsel123",
+      "role": "counsellor",
+      "fullName": "Prof. Sandeep Rao (Engineering Counselor)",
+      "email": "sandeep.rao@educonnect.in",
+      "status": "active"
+    },
+    {
+      "id": "STUDENT-001",
+      "username": "student",
+      "password": "student123",
+      "role": "student",
+      "studentId": "EDU-2026-001",
+      "fullName": "Aryan Sharma",
+      "email": "aryan@example.com",
+      "mustChangePassword": false,
+      "status": "active"
+    },
+    {
+      "id": "user-1790579945306",
+      "username": "raviteja.test@example.com",
+      "email": "raviteja.test@example.com",
+      "fullName": "Ravi Teja Verma",
+      "password": "MySecurePass#2026",
+      "role": "student",
+      "studentId": "EDU-2026-496",
+      "mustChangePassword": false,
+      "createdAt": "2026-09-28T07:19:05.306Z",
+      "status": "active"
+    },
+    {
+      "id": "user-1790586216374",
+      "username": "test.candidate@gmail.com",
+      "email": "test.candidate@gmail.com",
+      "fullName": "Test Candidate",
+      "password": "MyNewSecurePassword!2026",
+      "role": "student",
+      "studentId": "EDU-2026-527",
+      "mustChangePassword": false,
+      "createdAt": "2026-09-28T09:03:36.374Z",
+      "status": "active"
+    },
+    {
+      "id": "user-1790927420702",
+      "username": "testuser99@example.com",
+      "email": "testuser99@example.com",
+      "fullName": "Test User",
+      "password": "Stud@6755",
+      "temporaryPassword": "Stud@6755",
+      "role": "student",
+      "studentId": "EDU-2026-436",
+      "mustChangePassword": true,
+      "createdAt": "2026-10-02T07:50:20.702Z",
+      "status": "active"
+    },
+    {
+      "id": "usr-1790933923113",
+      "username": "nexoraeca@gmail.com",
+      "email": "nexoraeca@gmail.com",
+      "fullName": "Bharathsathyasaijanga26",
+      "role": "student",
+      "password": "SaiBharath@2026",
+      "studentId": "EDU-2026-404",
+      "mustChangePassword": false,
+      "active": true,
+      "status": "active"
+    },
+    {
+      "id": "SUPERADMIN-001",
+      "username": "superadmin",
+      "password": "superadmin123",
+      "role": "super_admin",
+      "fullName": "Dr. R. K. Varma (Chief Executive & Super Admin)",
+      "email": "director@educonnectindia.in"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-aptitude-01",
+      "title": "NACAT Scholarship Assessment",
+      "description": "National Aptitude & Career Assessment Test for higher education degree admissions, academic stream counseling, and institutional merit scholarship allocation.",
+      "course": "All Streams",
+      "date": "20 October 2026",
+      "startTime": "10:00 AM",
+      "durationMinutes": 120,
+      "passPercentage": 50,
+      "fee": 500,
+      "bookingStart": "2026-10-15T09:00:00Z",
+      "bookingEnd": "2026-10-20T23:59:00Z",
+      "resultPublishAt": "2026-10-25T10:00:00Z",
+      "status": "Registration Open",
+      "slots": [
+        {
+          "id": "slot-01",
+          "examId": "exam-aptitude-01",
+          "date": "20 October 2026",
+          "startTime": "10:00 AM",
+          "endTime": "12:00 PM",
+          "capacity": 50,
+          "bookedCount": 12,
+          "status": "available"
+        },
+        {
+          "id": "slot-02",
+          "examId": "exam-aptitude-01",
+          "date": "20 October 2026",
+          "startTime": "02:00 PM",
+          "endTime": "04:00 PM",
+          "capacity": 50,
+          "bookedCount": 8,
+          "status": "available"
+        },
+        {
+          "id": "slot-03",
+          "examId": "exam-aptitude-01",
+          "date": "20 October 2026",
+          "startTime": "06:00 PM",
+          "endTime": "08:00 PM",
+          "capacity": 50,
+          "bookedCount": 5,
+          "status": "available"
+        },
+        {
+          "id": "slot-now",
+          "examId": "exam-aptitude-01",
+          "date": "Flexible / Today Window",
+          "startTime": "09:00 AM",
+          "endTime": "11:59 PM",
+          "capacity": 100,
+          "bookedCount": 22,
+          "status": "available"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "text": "Which of the following field is most closely associated with neural networks and deep learning?",
+          "type": "single-choice",
+          "options": [
+            "Civil Engineering",
+            "Computer Science",
+            "Ayurveda",
+            "Chemical Engineering"
+          ],
+          "correctAnswers": [
+            1
+          ]
+        },
+        {
+          "id": "q2",
+          "text": "What does the 'A' in the university NAAC Grade signify?",
+          "type": "single-choice",
+          "options": [
+            "Average Quality",
+            "Very Good (Outstanding Academic & Infrastructure standards)",
+            "Acceptable",
+            "None of the above"
+          ],
+          "correctAnswers": [
+            1
+          ]
+        },
+        {
+          "id": "q3",
+          "text": "If a college has a highest placement package of 44 LPA and average of 6.5 LPA, what does LPA stand for in Indian Placement statistics?",
+          "type": "single-choice",
+          "options": [
+            "Loans Per Annum",
+            "Lakhs Per Annum",
+            "Lease Performance Allocation",
+            "Level Path Assessment"
+          ],
+          "correctAnswers": [
+            1
+          ]
+        },
+        {
+          "id": "q4",
+          "text": "Select the major disciplines that fall under STEM education in India (Select multiple):",
+          "type": "multiple-choice",
+          "options": [
+            "Science",
+            "Technology",
+            "Engineering",
+            "Sanskrit Mythology"
+          ],
+          "correctAnswers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "q5",
+          "text": "Bengaluru is widely considered the Silicon Valley of India. True or False?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswers": [
+            0
+          ]
+        },
+        {
+          "id": "q6",
+          "text": "Which Indian board administers standard 10th and 12th exams globally and nationally?",
+          "type": "single-choice",
+          "options": [
+            "CBSE",
+            "State Board",
+            "ICSE / ISC",
+            "All of the above"
+          ],
+          "correctAnswers": [
+            3
+          ]
+        },
+        {
+          "id": "q7",
+          "text": "Which of these is NOT a management degree?",
+          "type": "single-choice",
+          "options": [
+            "BBA",
+            "MBA",
+            "B.Tech",
+            "PGDM"
+          ],
+          "correctAnswers": [
+            2
+          ]
+        },
+        {
+          "id": "q8",
+          "text": "In healthcare, what does 'BPT' stand for?",
+          "type": "single-choice",
+          "options": [
+            "Bachelor of Pharmacy Technology",
+            "Bachelor of Physiotherapy",
+            "Basic Pathology Training",
+            "Board of Practical Therapy"
+          ],
+          "correctAnswers": [
+            1
+          ]
+        },
+        {
+          "id": "q9",
+          "text": "Agriculture studies are restricted only to farming practices. True or False?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctAnswers": [
+            1
+          ]
+        },
+        {
+          "id": "q10",
+          "text": "What is the primary role of an educational counselor?",
+          "type": "single-choice",
+          "options": [
+            "Conducting college audits",
+            "Guiding students to discover career options and college eligibility",
+            "Hosting legal debates",
+            "Collecting exam fees"
+          ],
+          "correctAnswers": [
+            1
+          ]
+        }
+      ],
+      "updatedAt": "2026-10-29T09:34:41.632Z"
+    }
+  ],
+  "attempts": [
+    {
+      "studentId": "EDU-2026-001",
+      "examId": "exam-aptitude-01",
+      "answers": {
+        "q1": [
+          1
+        ],
+        "q2": [
+          1
+        ],
+        "q3": [
+          1
+        ],
+        "q4": [
+          0,
+          1,
+          2
+        ],
+        "q5": [
+          0
+        ],
+        "q6": [
+          3
+        ],
+        "q7": [
+          2
+        ],
+        "q8": [
+          1
+        ],
+        "q9": [
+          1
+        ],
+        "q10": [
+          1
+        ]
+      },
+      "questionMarks": {
+        "q1": 1,
+        "q2": 1,
+        "q3": 1,
+        "q4": 1,
+        "q5": 1,
+        "q6": 1,
+        "q7": 1,
+        "q8": 1,
+        "q9": 1,
+        "q10": 1
+      },
+      "questionFeedback": {
+        "q1": "Accurate computer science knowledge",
+        "q4": "Comprehensive understanding of STEM"
+      },
+      "score": 10,
+      "maxScore": 10,
+      "percentage": 100,
+      "passed": true,
+      "rank": 1,
+      "attemptedAt": "2026-08-16T14:40:00.000Z",
+      "evaluationStatus": "Graded & Verified",
+      "evaluatorRemarks": "Outstanding performance across all aptitude sections. Recommended for 50% Merit Scholarship in B.Tech CSE.",
+      "evaluatorName": "Dr. Lakshmi Prasad (Chief Examiner)",
+      "evaluatedAt": "2026-08-16T14:50:00.000Z",
+      "isPublished": true,
+      "studentName": "Aryan Sharma",
+      "studentEmail": "aryan@example.com",
+      "studentCourse": "B.Tech",
+      "student12thMarks": 92,
+      "examTitle": "NACAT Scholarship Assessment",
+      "examDuration": 120,
+      "passPercentage": 50
+    },
+    {
+      "studentId": "EDU-2026-0367",
+      "examId": "exam-aptitude-01",
+      "answers": {
+        "q1": [
+          1
+        ],
+        "q2": [
+          1
+        ],
+        "q3": [
+          1
+        ],
+        "q4": [
+          0,
+          1
+        ],
+        "q5": [
+          0
+        ],
+        "q6": [
+          0
+        ],
+        "q7": [
+          2
+        ],
+        "q8": [
+          1
+        ],
+        "q9": [
+          0
+        ],
+        "q10": [
+          1
+        ]
+      },
+      "questionMarks": {
+        "q1": 1,
+        "q2": 1,
+        "q3": 1,
+        "q4": 0.5,
+        "q5": 1,
+        "q6": 0,
+        "q7": 1,
+        "q8": 1,
+        "q9": 0,
+        "q10": 1
+      },
+      "questionFeedback": {
+        "q4": "Partial credit awarded for identifying Science & Technology",
+        "q6": "Needs review on Board classification"
+      },
+      "score": 7.5,
+      "maxScore": 10,
+      "percentage": null,
+      "passed": false,
+      "rank": 2,
+      "attemptedAt": "2026-08-16T14:55:00.000Z",
+      "evaluationStatus": "Graded & Verified",
+      "evaluatorRemarks": "Evaluated by Exam Controller.",
+      "evaluatorName": "Chief Examination Officer",
+      "evaluatedAt": "2026-08-16T15:03:39.574Z",
+      "isPublished": true,
+      "studentName": "Priya Patel",
+      "studentEmail": "priya@example.com",
+      "studentCourse": "B.Tech",
+      "student12thMarks": 88,
+      "examTitle": "NACAT Scholarship Assessment",
+      "examDuration": 120,
+      "passPercentage": 50
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1790927420702",
+      "title": "Student Account Created 🎉",
+      "message": "Welcome Test User! Your student ID EDU-2026-436 is active. Please sign in and update your temporary password.",
+      "type": "success",
+      "targetStudentId": "EDU-2026-436",
+      "createdAt": "2026-10-02T07:50:20.702Z"
+    },
+    {
+      "id": "notif-1790586227032",
+      "title": "Student Account Created 🎉",
+      "message": "Welcome Test Candidate! Your student ID EDU-2026-527 is active. Please sign in and update your temporary password.",
+      "type": "success",
+      "targetStudentId": "EDU-2026-527",
+      "createdAt": "2026-09-28T09:03:47.032Z"
+    },
+    {
+      "id": "notif-1790586216374",
+      "title": "Student Account Created 🎉",
+      "message": "Welcome Test Candidate! Your student ID EDU-2026-571 is active. Please sign in and update your temporary password.",
+      "type": "success",
+      "targetStudentId": "EDU-2026-571",
+      "createdAt": "2026-09-28T09:03:36.374Z"
+    },
+    {
+      "id": "notif-1790579945306",
+      "title": "Student Account Created 🎉",
+      "message": "Welcome Ravi Teja Verma! Your student ID EDU-2026-496 is active. Please sign in and update your temporary password.",
+      "type": "success",
+      "targetStudentId": "EDU-2026-496",
+      "createdAt": "2026-09-28T07:19:05.306Z"
+    },
+    {
+      "id": "notif-01",
+      "title": "Welcome to EduConnect India!",
+      "message": "Welcome Aryan. Please review your profile, confirm your course preferences, and attempt your assigned assessment exam.",
+      "type": "info",
+      "targetStudentId": "EDU-2026-001",
+      "createdAt": "2026-06-29T08:00:00Z"
+    },
+    {
+      "id": "notif-02",
+      "title": "NACAT Registration Open",
+      "message": "The National Aptitude Test has been activated in your profile. Please complete it to receive tailored college recommendations.",
+      "type": "alert",
+      "targetStudentId": "EDU-2026-001",
+      "createdAt": "2026-06-29T09:00:00Z"
+    },
+    {
+      "id": "notif-1786892124687",
+      "title": "Credentials Generated",
+      "message": "Your account credentials have been successfully activated! Use Login ID: priyapatel36 and Password: pass1428 to log in.",
+      "type": "success",
+      "targetStudentId": "EDU-2026-0367",
+      "createdAt": "2026-08-16T14:55:24.687Z"
+    },
+    {
+      "id": "notif-1786892613918",
+      "title": "Test Evaluated: National Aptitude & Career Assessment Test (NACAT)",
+      "message": "Your test paper for \"National Aptitude & Career Assessment Test (NACAT)\" has been reviewed and graded! Final Score: 7.5/10 (75% - PASSED). Examiner Feedback: \"Auto-evaluated submission awaiting examiner sign-off and counseling review.\"",
+      "type": "success",
+      "targetStudentId": "EDU-2026-0367",
+      "createdAt": "2026-08-16T15:03:33.918Z"
+    },
+    {
+      "id": "notif-1786892619574",
+      "title": "Test Evaluated: National Aptitude & Career Assessment Test (NACAT)",
+      "message": "Your test paper for \"National Aptitude & Career Assessment Test (NACAT)\" has been reviewed and graded! Final Score: 7.5/10 (NaN% - RETEST RECOMMENDED). Examiner Feedback: \"Evaluated by Exam Controller.\"",
+      "type": "alert",
+      "targetStudentId": "EDU-2026-0367",
+      "createdAt": "2026-08-16T15:03:39.574Z"
+    },
+    {
+      "id": "notif-1790829557234",
+      "title": "Counselor Assigned",
+      "message": "Your dedicated academic counselor is Prof. Sandeep Rao. They will assist you with assessment reviews, college selections, and scholarship procedures.",
+      "type": "info",
+      "targetStudentId": "EDU-2026-001",
+      "createdAt": "2026-10-01T04:39:17.234Z"
+    },
+    {
+      "id": "notif-1793266460140",
+      "title": "Upcoming Exam Released: NACAT Scholarship Assessment",
+      "message": "NACAT Scholarship Assessment is now published and open for slot booking with 2 scheduled time slot(s). Exam Date: 25 November 2026. Duration: 120 Mins. Fee: ₹0. Choose your examination slot to appear for the test.",
+      "type": "alert",
+      "createdAt": "2026-10-29T09:34:20.140Z"
+    },
+    {
+      "id": "notif-1793266468009",
+      "title": "Exam Slot Confirmed",
+      "message": "Your examination for \"NACAT Scholarship Assessment\" is scheduled for 25 November 2026 at 09:30 AM. The examination portal will open strictly during your assigned slot.",
+      "type": "info",
+      "targetStudentId": "std-1",
+      "createdAt": "2026-10-29T09:34:28.009Z"
+    },
+    {
+      "id": "notif-1793266481632",
+      "title": "Upcoming Exam Released: NACAT Scholarship Assessment",
+      "message": "NACAT Scholarship Assessment is now published and open for slot booking with 3 scheduled time slot(s). Exam Date: 20 November 2026. Duration: 120 Mins. Fee: ₹0. Choose your examination slot to appear for the test.",
+      "type": "alert",
+      "createdAt": "2026-10-29T09:34:41.632Z"
+    }
+  ],
+  "resultsPublished": {
+    "exam-aptitude-01": true
+  },
+  "colleges": [
+    {
+      "id": "ganpat-univ",
+      "name": "Ganpat University",
+      "state": "Gujarat",
+      "city": "Mehsana",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "Leading private university offering innovative technical and professional education in North Gujarat.",
+      "about": "Ganpat University (GUNI) is established under the State Act. It is a highly respected, high-tech campus spread over 300 acres of green land. GUNI is committed to academic excellence and industry-focused curriculum.",
+      "imageUrl": "/images/uploaded/img_1791121391899_4679.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "42.0 LPA",
+      "averagePackage": "6.2 LPA",
+      "placementRate": "92%",
+      "recruiters": [
+        "Tata Consultancy Services",
+        "Reliance Industries",
+        "L&T Infotech",
+        "Cognizant",
+        "Adani Group"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech Computer Engineering",
+          "duration": "4 Years",
+          "fees": "1,20,000 / year"
+        },
+        {
+          "name": "B.Tech Information Technology",
+          "duration": "4 Years",
+          "fees": "1,20,000 / year"
+        },
+        {
+          "name": "Integrated Degree (IAS/IPS & Bank Jobs Coaching)",
+          "duration": "3 Years",
+          "fees": "75,000 / year"
+        },
+        {
+          "name": "MBA Business Analytics",
+          "duration": "2 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "BBA",
+          "duration": "3 Years",
+          "fees": "65,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Advanced Compute Labs",
+        "Robotics Innovation Center",
+        "Smart Classrooms",
+        "3D Printing Lab",
+        "Central Library with 100,000+ books"
+      ],
+      "hostelInfo": "Modern AC and Non-AC rooms with 24/7 Wi-Fi, laundry, gym, and hygienic vegetarian cafeteria.",
+      "sportsFacilities": [
+        "Cricket Stadium",
+        "Football Turf",
+        "Indoor Badminton Courts",
+        "Olympic-size Swimming Pool",
+        "Gymnasium"
+      ],
+      "facultyCount": 450,
+      "reviews": [
+        {
+          "author": "Mehul Patel",
+          "rating": 5,
+          "text": "Amazing campus with super modern laboratories. The placement team is really helpful."
+        },
+        {
+          "author": "Sonal Shah",
+          "rating": 4,
+          "text": "GUNI is known for industry collaborations. I got a paid internship in my final semester!"
+        }
+      ],
+      "admissionProcess": "Admission through national/state level entrance tests (GUJCET/JEE) or merit list through counseling.",
+      "courseStreams": [
+        "Engineering",
+        "B.Tech Engineering (CSE, AI, IT)",
+        "Integrated Degree (Civil Services & Bank Jobs)",
+        "Management",
+        "BBA & BBA Business Analytics"
+      ]
+    },
+    {
+      "id": "gokul-univ",
+      "name": "Gokul Global University",
+      "state": "Gujarat",
+      "city": "Siddhpur",
+      "naacGrade": "B++",
+      "nbaAccredited": false,
+      "shortDescription": "Dedicated to empowering rural and semi-urban students with top-tier education and skill development.",
+      "about": "Gokul Global University provides professional, vocational, and technical education across multiple streams. Centered in historic Siddhpur, it has rapidly grown into a prominent regional education hub.",
+      "imageUrl": "/images/uploaded/img_1791121391903_3931.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "15.5 LPA",
+      "averagePackage": "4.1 LPA",
+      "placementRate": "85%",
+      "recruiters": [
+        "Alembic Pharma",
+        "Suzuki Motors",
+        "TCS",
+        "ICICI Bank",
+        "Tech Mahindra"
+      ],
+      "courses": [
+        {
+          "name": "Integrated Degree (BA / B.Com + IAS/IPS & Bank Exam Foundation)",
+          "duration": "3 Years",
+          "fees": "65,000 / year"
+        },
+        {
+          "name": "B.Tech Civil Engineering",
+          "duration": "4 Years",
+          "fees": "85,000 / year"
+        },
+        {
+          "name": "B.Sc Agriculture",
+          "duration": "4 Years",
+          "fees": "70,000 / year"
+        },
+        {
+          "name": "Diploma Mechanical Engineering",
+          "duration": "3 Years",
+          "fees": "45,000 / year"
+        },
+        {
+          "name": "B.Ed Education",
+          "duration": "2 Years",
+          "fees": "60,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Soil Testing Laboratory",
+        "Engine Workshops",
+        "IT Labs",
+        "Central Seminar Hall"
+      ],
+      "hostelInfo": "Comfortable living arrangements with nutritious mess food, regular sports access, and tight security.",
+      "sportsFacilities": [
+        "Kabaddi Field",
+        "Volleyball Court",
+        "Athletic Track",
+        "Table Tennis Room"
+      ],
+      "facultyCount": 220,
+      "reviews": [
+        {
+          "author": "Rahul Rabari",
+          "rating": 4,
+          "text": "Great faculty support. The practical agriculture fields are massive and extremely informative."
+        }
+      ],
+      "admissionProcess": "Merit list based on class 12th board examination marks.",
+      "courseStreams": [
+        "Commerce",
+        "B.Com (Finance, Analytics, Taxation, Computers)",
+        "Integrated Degree (Civil Services & Bank Jobs)",
+        "Engineering",
+        "B.Tech Engineering (CSE, AI, IT)"
+      ]
+    },
+    {
+      "id": "sandip-univ",
+      "name": "Sandip University",
+      "state": "Maharashtra",
+      "city": "Nashik",
+      "naacGrade": "A+",
+      "nbaAccredited": true,
+      "shortDescription": "A world-class university in Nashik offering global career exposure and state-of-the-art infrastructure.",
+      "about": "Sandip University stands as an iconic educational group. Located in the beautiful, serene climate of Nashik, the campus spans 250+ acres. The university is a research-led, tech-driven institution offering international standards.",
+      "imageUrl": "/images/uploaded/img_1791121391905_9125.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1558021212-51b6ecfa0db9?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "1.11 Crore/year (International)",
+      "averagePackage": "7.8 LPA",
+      "placementRate": "95%",
+      "recruiters": [
+        "Amazon",
+        "Infosys",
+        "Capgemini",
+        "KPIT Technologies",
+        "Wipro",
+        "Persistent Systems"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech Computer Science & Engineering",
+          "duration": "4 Years",
+          "fees": "1,80,000 / year"
+        },
+        {
+          "name": "B.Tech AI & Machine Learning",
+          "duration": "4 Years",
+          "fees": "2,00,000 / year"
+        },
+        {
+          "name": "Integrated Degree (BA / B.Com + UPSC & Banking Track)",
+          "duration": "3 Years",
+          "fees": "85,000 / year"
+        },
+        {
+          "name": "MBA Global Management",
+          "duration": "2 Years",
+          "fees": "1,50,000 / year"
+        },
+        {
+          "name": "B.Sc Allied Health Sciences",
+          "duration": "3 Years",
+          "fees": "95,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Apple iOS Developer Lab",
+        "BMW Sponsored Automotive Engine Center",
+        "Amphitheater",
+        "Wi-Fi enabled campus"
+      ],
+      "hostelInfo": "Premium apartment-style hostel clusters with study rooms, continuous security, multi-cuisine dining, and recreational lounges.",
+      "sportsFacilities": [
+        "Basketball Arena",
+        "Cricket Academy Ground",
+        "Archery Range",
+        "Ultra-modern Gymnasium"
+      ],
+      "facultyCount": 510,
+      "reviews": [
+        {
+          "author": "Amit Deshmukh",
+          "rating": 5,
+          "text": "Absolutely spectacular campus. Feels like a foreign university. Placements are solid!"
+        }
+      ],
+      "admissionProcess": "Direct admissions through Sandip University Joint Entrance Exam (SUJEE) or scores from JEE/CET.",
+      "courseStreams": [
+        "Engineering",
+        "B.Tech Engineering (CSE, AI, IT)",
+        "B.Sc Computer Science",
+        "Computer Applications",
+        "Commerce",
+        "B.Com (Finance, Analytics, Taxation, Computers)",
+        "Integrated Degree (Civil Services & Bank Jobs)",
+        "Management",
+        "Healthcare"
+      ]
+    },
+    {
+      "id": "gibs-business",
+      "name": "GIBS Business School",
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "One of the top-ranked premier business schools in Bengaluru, focused on grooming future leaders.",
+      "about": "Global Institute of Business Studies (GIBS) has emerged as one of the elite business management institutions. Designed to deliver global standard corporate exposure, GIBS is an absolute destination for BBA and MBA/PGDM candidates.",
+      "imageUrl": "/images/gibs_business_school.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "18.0 LPA",
+      "averagePackage": "7.4 LPA",
+      "placementRate": "100%",
+      "recruiters": [
+        "Deloitte",
+        "PwC",
+        "HDFC Bank",
+        "Amazon",
+        "Pepsico",
+        "Toyota",
+        "EY"
+      ],
+      "courses": [
+        {
+          "name": "BBA - Bachelor of Business Administration",
+          "duration": "3 Years",
+          "fees": "1,50,000 / year"
+        },
+        {
+          "name": "PGDM - Dual Specialization",
+          "duration": "2 Years",
+          "fees": "3,80,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Harvard-style Seminar Halls",
+        "In-house Innovation & Start-up Incubator",
+        "Corporate Board Room Simulator",
+        "Rich digital databases"
+      ],
+      "hostelInfo": "Sophisticated safe housing for both boys and girls with study desks, high-speed fiber internet, and premium dining menu.",
+      "sportsFacilities": [
+        "Indoor Snooker and Billiards Room",
+        "Table Tennis Area",
+        "Badminton Court",
+        "Cardio Gym Room"
+      ],
+      "facultyCount": 85,
+      "reviews": [
+        {
+          "author": "Karan Sharma",
+          "rating": 5,
+          "text": "The Corporate Finishing School program at GIBS is a game-changer. Prepared me perfectly for PwC interviews!"
+        }
+      ],
+      "admissionProcess": "Based on GIBS entrance test, group discussion, and personal interview rounds."
+    },
+    {
+      "id": "dhanwantari-coll",
+      "name": "Dhanwantari College",
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "naacGrade": "B+",
+      "nbaAccredited": false,
+      "shortDescription": "Specialized healthcare and medical sciences college preparing competent nursing and allied health professionals.",
+      "about": "Dhanwantari College of Nursing and Allied Health Sciences is a respected healthcare training institution in Bengaluru. The college specializes in providing highly rigorous practical internships in corporate hospitals.",
+      "imageUrl": "/images/dhanwantari_college.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "8.5 LPA",
+      "averagePackage": "4.8 LPA",
+      "placementRate": "98%",
+      "recruiters": [
+        "Fortis Healthcare",
+        "Apollo Hospitals",
+        "Manipal Hospitals",
+        "Columbia Asia",
+        "Narayana Health"
+      ],
+      "courses": [
+        {
+          "name": "B.Sc Nursing",
+          "duration": "4 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "Bachelor of Physiotherapy (BPT)",
+          "duration": "4.5 Years",
+          "fees": "1,25,000 / year"
+        },
+        {
+          "name": "B.Sc Medical Laboratory Technology",
+          "duration": "3 Years",
+          "fees": "85,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Advanced Nursing Simulation lab",
+        "Anatomy and Pathology Lab",
+        "Dedicated Physiotherapy Clinic",
+        "Medical Informatics Room"
+      ],
+      "hostelInfo": "Fully secure, homely hostel rooms with strictly supervised security, clean drinking water, and wholesome regional South/North foods.",
+      "sportsFacilities": [
+        "Throwball court",
+        "Badminton Court",
+        "Indoor Board Games area"
+      ],
+      "facultyCount": 64,
+      "reviews": [
+        {
+          "author": "Anjali Nair",
+          "rating": 4,
+          "text": "Amazing placement tie-ups. Most of my seniors got placed in top-tier corporate hospitals during clinical postings."
+        }
+      ],
+      "admissionProcess": "Merit-based on class 12th science marks (Biology, Chemistry, Physics)."
+    },
+    {
+      "id": "mvm-medical",
+      "name": "MVM Medical College",
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "naacGrade": "B++",
+      "nbaAccredited": false,
+      "shortDescription": "Premier institute for Allied Health, Nursing, and Pharmacy studies with multi-specialty clinical training.",
+      "about": "MVM Group of Institutions offers highly acclaimed clinical education in Allied Health Sciences and Pharmacy. The campus is known for advanced training programs designed in alignment with international medical boards.",
+      "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "9.0 LPA",
+      "averagePackage": "4.9 LPA",
+      "placementRate": "96%",
+      "recruiters": [
+        "Aster DM Healthcare",
+        "Cloudnine Hospitals",
+        "HCG Oncology",
+        "Max Healthcare",
+        "Biocon"
+      ],
+      "courses": [
+        {
+          "name": "B.Sc Cardiac Care Technology",
+          "duration": "3.5 Years",
+          "fees": "1,40,000 / year"
+        },
+        {
+          "name": "B.Pharma",
+          "duration": "4 Years",
+          "fees": "1,20,000 / year"
+        },
+        {
+          "name": "B.Sc Imaging Technology",
+          "duration": "3.5 Years",
+          "fees": "95,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Diagnostics Research Centre",
+        "Microbiology Lab",
+        "Pharmaceutical Chemistry lab",
+        "Anatomy Models Gallery"
+      ],
+      "hostelInfo": "Modern living quarters with strict visitor rules, clean dining facilities, study desks, and basic clinical checkups in-house.",
+      "sportsFacilities": [
+        "Basketball Court",
+        "Table Tennis Tables",
+        "Shuttle Badminton Turf"
+      ],
+      "facultyCount": 95,
+      "reviews": [
+        {
+          "author": "Vikram Gowda",
+          "rating": 5,
+          "text": "Clinical labs are extremely well-equipped. We get to handle actual diagnostics machines in training."
+        }
+      ],
+      "admissionProcess": "Class 12th PCB marks counseling allocation."
+    },
+    {
+      "id": "izee-group",
+      "name": "IZee Group of Institutions",
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "Empowering professional development through computer applications, management, and nursing programs.",
+      "about": "IZee Group is backed by IZee Manpower, a leading corporate recruiting agency. This provides the institution an unparalleled advantage in connecting students with high-profile global business internships.",
+      "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1513258496099-48168024addd?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "14.0 LPA",
+      "averagePackage": "5.8 LPA",
+      "placementRate": "100%",
+      "recruiters": [
+        "IBM",
+        "Wipro",
+        "Tech Mahindra",
+        "Accenture",
+        "Cognizant",
+        "Standard Chartered"
+      ],
+      "courses": [
+        {
+          "name": "BCA (Computer Applications)",
+          "duration": "3 Years",
+          "fees": "95,000 / year"
+        },
+        {
+          "name": "BBA - Aviation Management",
+          "duration": "3 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "B.Sc Nursing",
+          "duration": "4 Years",
+          "fees": "1,20,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Interactive Tech Labs",
+        "Aviation Mock Cabin Lounge",
+        "Nursing Clinical ward",
+        "High-Speed Wi-Fi Zones"
+      ],
+      "hostelInfo": "Cozy campus residential suites with separate dietary menus for diverse regional students.",
+      "sportsFacilities": [
+        "Cricket nets",
+        "Mini Football field",
+        "Carrom & Chess club"
+      ],
+      "facultyCount": 110,
+      "reviews": [
+        {
+          "author": "Meghna Roy",
+          "rating": 4,
+          "text": "Since the college is owned by a recruitment agency, the placement preparation and soft skills bootcamps start from Year 1!"
+        }
+      ],
+      "admissionProcess": "Written analytical test followed by Counselor Interview."
+    },
+    {
+      "id": "yenepoya-univ",
+      "name": "Yenepoya University",
+      "state": "Karnataka",
+      "city": "Mangaluru",
+      "naacGrade": "A+",
+      "nbaAccredited": true,
+      "shortDescription": "Renowned medical, dental, and health sciences university with a giant medical college campus.",
+      "about": "Yenepoya is the first private university in Mangaluru. It is highly prestigious, housing over 1,000 beds in its multi-specialty medical training hospital. Offering robust medicine, nursing, dental, and advanced healthcare programs.",
+      "imageUrl": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1582750433449-649350141f16?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "32.0 LPA",
+      "averagePackage": "8.2 LPA",
+      "placementRate": "95%",
+      "recruiters": [
+        "Yenepoya Medical Hospital",
+        "KMC Hospital",
+        "Medanta",
+        "Apollo Lifecare",
+        "Aster Group"
+      ],
+      "courses": [
+        {
+          "name": "B.Sc Nursing Science",
+          "duration": "4 Years",
+          "fees": "1,50,000 / year"
+        },
+        {
+          "name": "BPT (Physiotherapy)",
+          "duration": "4.5 Years",
+          "fees": "1,60,000 / year"
+        },
+        {
+          "name": "B.Sc Medical Laboratory Technology",
+          "duration": "3 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "B.Sc Cyber Security & Forensics",
+          "duration": "3 Years",
+          "fees": "1,30,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Yenepoya Multi-specialty Hospital",
+        "Dentistry simulation center",
+        "Robotic Surgery unit",
+        "Advanced Bio-Research center"
+      ],
+      "hostelInfo": "AC hostel apartments with modern study lounges, high-tech cafeteria supplying nutritious customized diets.",
+      "sportsFacilities": [
+        "FIFA Accredited Soccer Ground",
+        "Professional Tennis Courts",
+        "Indoor Basketball Arena",
+        "In-house Health Club"
+      ],
+      "facultyCount": 780,
+      "reviews": [
+        {
+          "author": "Dr. Fatima Rizwan",
+          "rating": 5,
+          "text": "Clinical exposure at Yenepoya is unparalleled. You get to interact with thousands of outpatients under expert guidance."
+        }
+      ],
+      "admissionProcess": "Through Yenepoya Entrance Exam (YUEE) or NEET eligibility counseling."
+    },
+    {
+      "id": "hindusthan-tech",
+      "name": "Hindusthan Institute of Technology",
+      "state": "Tamil Nadu",
+      "city": "Coimbatore",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "Center of technical innovation in Coimbatore providing top-notch computer science and engineering degrees.",
+      "about": "Hindusthan Institute of Technology is dedicated to providing high-quality engineering and technology research studies. With modern infrastructural amenities, industry partnerships, and academic accolades.",
+      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "22.0 LPA",
+      "averagePackage": "5.2 LPA",
+      "placementRate": "91%",
+      "recruiters": [
+        "Cognizant",
+        "CTS",
+        "ZOHO Corp",
+        "Infosys",
+        "Ford India",
+        "Mindtree"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech CS & AI",
+          "duration": "4 Years",
+          "fees": "1,20,000 / year"
+        },
+        {
+          "name": "B.Tech Information Technology",
+          "duration": "4 Years",
+          "fees": "1,20,000 / year"
+        },
+        {
+          "name": "B.E. Electronics & Communication",
+          "duration": "4 Years",
+          "fees": "1,10,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Intel IoT Center of Excellence",
+        "Digital Library with IEEE access",
+        "Heavy Machine Workshop",
+        "R&D Incubation Cell"
+      ],
+      "hostelInfo": "Modern residential dormitories with separate dining areas serving clean, vegetarian and non-vegetarian menus.",
+      "sportsFacilities": [
+        "Professional Football Turf",
+        "All-weather Basketball Arena",
+        "Indoor Table Tennis Halls"
+      ],
+      "facultyCount": 280,
+      "reviews": [
+        {
+          "author": "Vignesh Kumar",
+          "rating": 4,
+          "text": "The Coimbatore environment combined with our outstanding technical training makes Hindusthan a great choice."
+        }
+      ],
+      "admissionProcess": "Tamil Nadu Engineering Admissions (TNEA) single-window counseling or management merit seats."
+    },
+    {
+      "id": "excel-engg",
+      "name": "Excel Engineering College",
+      "state": "Tamil Nadu",
+      "city": "Namakkal",
+      "naacGrade": "A+",
+      "nbaAccredited": true,
+      "shortDescription": "An autonomous engineering campus known for experiential learning and incredible placement record.",
+      "about": "Excel Group of Institutions is one of the premier educational groups in South India. Nestled in Namakkal, the autonomous college is widely admired for research labs, innovation hubs, and corporate placements.",
+      "imageUrl": "https://images.unsplash.com/photo-1595799613836-3b2ff1c9003b?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1498243691581-b145c3f54a5c?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "18.0 LPA",
+      "averagePackage": "4.8 LPA",
+      "placementRate": "94%",
+      "recruiters": [
+        "TCS",
+        "Wipro",
+        "KPIT",
+        "Renault Nissan",
+        "Biocon",
+        "ZOHO Corp"
+      ],
+      "courses": [
+        {
+          "name": "B.E. Computer Science & Engg",
+          "duration": "4 Years",
+          "fees": "95,000 / year"
+        },
+        {
+          "name": "B.Tech AI & Data Science",
+          "duration": "4 Years",
+          "fees": "1,05,000 / year"
+        },
+        {
+          "name": "B.Tech Agriculture Engineering",
+          "duration": "4 Years",
+          "fees": "85,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Automotive testing laboratory",
+        "CNC machinery cell",
+        "IoT and Embedded systems labs",
+        "Eco-friendly smart campus"
+      ],
+      "hostelInfo": "Spacious individual and shared rooms with high levels of sanitization, pure drinking water filters, and balanced meals.",
+      "sportsFacilities": [
+        "400m Track Field",
+        "Kabaddi Sand ground",
+        "Volleyball Turf courts"
+      ],
+      "facultyCount": 310,
+      "reviews": [
+        {
+          "author": "Prasanna Selvam",
+          "rating": 5,
+          "text": "Practical instruction is very emphasized. The faculty members are friendly and guide you in publishing research patents."
+        }
+      ],
+      "admissionProcess": "Admissions based on TNEA Counseling merit list or Direct eligibility entrance tests."
+    },
+    {
+      "id": "vignan-univ",
+      "name": "Vignan University",
+      "state": "Andhra Pradesh",
+      "city": "Guntur",
+      "naacGrade": "A+",
+      "nbaAccredited": true,
+      "shortDescription": "Deemed-to-be University specializing in cutting-edge engineering research and student entrepreneurship.",
+      "about": "Vignans Foundation for Science, Technology & Research (Deemed to be University) provides a high-quality academic base. It promotes interdisciplinary projects, hands-on industrial experiences, and premium professional ethics.",
+      "imageUrl": "/images/vignan_university.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "44.0 LPA",
+      "averagePackage": "6.5 LPA",
+      "placementRate": "98%",
+      "recruiters": [
+        "Amazon",
+        "Infosys",
+        "TCS",
+        "Capgemini",
+        "IBM",
+        "HCL",
+        "Accenture"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech Computer Science & Engg",
+          "duration": "4 Years",
+          "fees": "2,10,000 / year"
+        },
+        {
+          "name": "B.Tech Cyber Security",
+          "duration": "4 Years",
+          "fees": "1,90,000 / year"
+        },
+        {
+          "name": "Integrated Degree (BA / B.Com + UPSC & Bank PO Foundation)",
+          "duration": "3 Years",
+          "fees": "80,000 / year"
+        },
+        {
+          "name": "B.Tech Agricultural Engineering",
+          "duration": "4 Years",
+          "fees": "1,60,000 / year"
+        },
+        {
+          "name": "MBA Financial Analysis",
+          "duration": "2 Years",
+          "fees": "1,20,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Aeronautics simulator room",
+        "Bio-Informatics Research hub",
+        "Nvidia GPU computing lab",
+        "Huge Sports Complex"
+      ],
+      "hostelInfo": "Superior living facilities with separate wings, organic steam-cooked food, high-speed campus fiber internet, and 24/7 security surveillance.",
+      "sportsFacilities": [
+        "Athletic Stadium",
+        "Tennis Clay Courts",
+        "Volleyball Clay courts",
+        "Modern Weightlifting Gym"
+      ],
+      "facultyCount": 580,
+      "reviews": [
+        {
+          "author": "Chandra Sekhar",
+          "rating": 5,
+          "text": "Vignan has changed my life. The skill-development labs and campus mock drives prepares you perfectly for recruiters."
+        }
+      ],
+      "admissionProcess": "Through Vignan Joint Entrance Exam (VSAT) or JEE Mains/AP EAPCET rank counseling."
+    },
+    {
+      "id": "chalapathi-inst",
+      "name": "Chalapathi Institute of Pharmaceutical Sciences",
+      "state": "Andhra Pradesh",
+      "city": "Guntur",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "One of APs finest pharmacy education institutes, offering highly accredited Pharma.D and B.Pharm studies.",
+      "about": "Chalapathi Institute (CLPT) is dedicated exclusively to training high-level pharmaceutical professionals. Affiliated with major hospitals for real Pharma.D diagnostics practice and clinical research training.",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "12.0 LPA",
+      "averagePackage": "4.5 LPA",
+      "placementRate": "95%",
+      "recruiters": [
+        "Dr. Reddys Laboratories",
+        "Aurobindo Pharma",
+        "Divis Labs",
+        "Hetero Drugs",
+        "Sun Pharma"
+      ],
+      "courses": [
+        {
+          "name": "B.Pharma",
+          "duration": "4 Years",
+          "fees": "95,000 / year"
+        },
+        {
+          "name": "Pharma.D (Doctor of Pharmacy)",
+          "duration": "6 Years",
+          "fees": "1,80,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Advanced Pharmacology testing wing",
+        "Instrumental Analysis center",
+        "Herbarium Garden",
+        "Machine Room"
+      ],
+      "hostelInfo": "Extremely peaceful study-focused hostel accommodation with clean dining spaces and disciplined security guidelines.",
+      "sportsFacilities": [
+        "Shuttle Badminton Courts",
+        "Tennikoit Courts",
+        "Carrom tables"
+      ],
+      "facultyCount": 78,
+      "reviews": [
+        {
+          "author": "Pavani Reddy",
+          "rating": 4,
+          "text": "The drug testing labs here are highly advanced. We get real industry exposure during project submissions."
+        }
+      ],
+      "admissionProcess": "Based on rank achieved in AP EAPCET (Pharmacy stream) counseling list."
+    },
+    {
+      "id": "nri-tech",
+      "name": "NRI Institute of Technology",
+      "state": "Andhra Pradesh",
+      "city": "Vijayawada",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "Popular technical campus in Vijayawada offering core placements in tech and manufacturing sectors.",
+      "about": "NRI Institute of Technology (NRIIT) has grown into a prime educational asset for technological development in Andhra Pradesh. Known for extensive soft-skill bootcamps and exceptional training centers.",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "20.0 LPA",
+      "averagePackage": "5.1 LPA",
+      "placementRate": "93%",
+      "recruiters": [
+        "TCS",
+        "Cognizant",
+        "Mindtree",
+        "L&T Infotech",
+        "Mphasis",
+        "ValueLabs"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech CSE - Data Science",
+          "duration": "4 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "B.Tech Information Technology",
+          "duration": "4 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "B.Tech Electronics & Comm",
+          "duration": "4 Years",
+          "fees": "1,00,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Fully centralized computer center",
+        "Digital libraries",
+        "IoT prototype hubs",
+        "Spacious seminar rooms"
+      ],
+      "hostelInfo": "Separated girls and boys hostels on-campus with tasty Telugu meals, safety surveillance, and reading libraries.",
+      "sportsFacilities": [
+        "Volleyball court",
+        "Throwball play field",
+        "Cricket nets"
+      ],
+      "facultyCount": 245,
+      "reviews": [
+        {
+          "author": "Suresh Kumar",
+          "rating": 4,
+          "text": "Awesome college life. The campus placement team brings multiple MNCs every year."
+        }
+      ],
+      "admissionProcess": "Through AP EAPCET Engineering counseling quota allocation."
+    },
+    {
+      "id": "kits-engg",
+      "name": "KITS Engineering College",
+      "state": "Andhra Pradesh",
+      "city": "Guntur",
+      "naacGrade": "B++",
+      "nbaAccredited": false,
+      "shortDescription": "Fostering technological competence and moral values through high-quality professional learning.",
+      "about": "KKR & KSR Institute of Technology and Sciences (KITS) represents quality technical education in Guntur. Highly prioritized for innovative projects, robotic clubs, and technical fests.",
+      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "16.0 LPA",
+      "averagePackage": "4.5 LPA",
+      "placementRate": "90%",
+      "recruiters": [
+        "Capgemini",
+        "IBM",
+        "Tech Mahindra",
+        "Cognizant",
+        "Broadridge"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech Computer Science Engineering",
+          "duration": "4 Years",
+          "fees": "95,000 / year"
+        },
+        {
+          "name": "B.Tech AI & Data Science",
+          "duration": "4 Years",
+          "fees": "95,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Advanced AI & Robotics Lab",
+        "English communication lab",
+        "Interactive seminar galleries"
+      ],
+      "hostelInfo": "Equipped residential accommodation, secure compound wall gates, study-hours supervision, and wholesome meals.",
+      "sportsFacilities": [
+        "Basketball court",
+        "Table Tennis boards",
+        "Cricket practice fields"
+      ],
+      "facultyCount": 195,
+      "reviews": [
+        {
+          "author": "Lakshmi Prasanna",
+          "rating": 4,
+          "text": "Very disciplined college. Regular training events and hackathons keep the computer students active."
+        }
+      ],
+      "admissionProcess": "Through AP EAPCET entrance test."
+    },
+    {
+      "id": "nxtwave-campus",
+      "name": "NxtWave Partner Campus",
+      "state": "Telangana",
+      "city": "Hyderabad",
+      "naacGrade": "A+",
+      "nbaAccredited": true,
+      "shortDescription": "Industry-first educational campus in Hyderabad offering direct intensive software placements alongside university degrees.",
+      "about": "Partnering with premium technological colleges, NxtWave Partner Campus in Hyderabad infuses CCBP 4.0 intensive tech training with formal engineering streams. This model prepares students directly for elite software developer careers with high salary packages.",
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1513258496099-48168024addd?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "46.0 LPA",
+      "averagePackage": "8.5 LPA",
+      "placementRate": "100%",
+      "recruiters": [
+        "NxtWave Partner Networks",
+        "Microsoft",
+        "Uber",
+        "Amazon",
+        "Deloitte",
+        "Cognizant",
+        "ZOHO Corp"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech CSE - AI & Data Science",
+          "duration": "4 Years",
+          "fees": "2,20,000 / year"
+        },
+        {
+          "name": "B.Tech CSE - Cyber Security",
+          "duration": "4 Years",
+          "fees": "2,20,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Interactive Coding Playgrounds",
+        "Elite Software Engineering Incubator",
+        "Modern Hackathon halls",
+        "Smart Tech spaces"
+      ],
+      "hostelInfo": "Superior tech-focused hostel spaces with high-speed fiber internet in all rooms, and coding zones in residential areas.",
+      "sportsFacilities": [
+        "Indoor Badminton Courts",
+        "Squash Court",
+        "Multi-room Gym",
+        "Volleyball Turf"
+      ],
+      "facultyCount": 160,
+      "reviews": [
+        {
+          "author": "Chaitanya Goud",
+          "rating": 5,
+          "text": "The hands-on technical coding training is next-level. I cleared advanced programming rounds of Amazon through this!"
+        }
+      ],
+      "admissionProcess": "CCBP Analytical Skill Test and Technical counseling interviews."
+    },
+    {
+      "id": "cmr-univ",
+      "name": "CMR University",
+      "state": "Telangana",
+      "city": "Medchal",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "Premier technological and management university in Medchal, known for global standard incubation hubs.",
+      "about": "CMR Group is a massive brand in engineering and management education. Spread across extensive acres in Medchal, Telangana, CMR University is dedicated to developing tech leaders who can contribute globally.",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "38.0 LPA",
+      "averagePackage": "6.1 LPA",
+      "placementRate": "96%",
+      "recruiters": [
+        "Amazon",
+        "Infosys",
+        "Cognizant",
+        "TCS",
+        "Capgemini",
+        "Virtusa",
+        "Wipro"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech Computer Science & Engg",
+          "duration": "4 Years",
+          "fees": "1,80,000 / year"
+        },
+        {
+          "name": "B.Tech Information Technology",
+          "duration": "4 Years",
+          "fees": "1,60,000 / year"
+        },
+        {
+          "name": "MBA Business Intelligence",
+          "duration": "2 Years",
+          "fees": "1,20,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Center of Excellence in Big Data",
+        "Mechanical Innovation Centers",
+        "Central Libraries",
+        "Advanced Auditorium"
+      ],
+      "hostelInfo": "Modern safe hostel setups with premium laundry, multi-diet dining halls, and 24/7 security support.",
+      "sportsFacilities": [
+        "Cricket Stadium Ground",
+        "Football Turf Arena",
+        "Shuttle Badminton courts"
+      ],
+      "facultyCount": 460,
+      "reviews": [
+        {
+          "author": "Aravind Reddy",
+          "rating": 5,
+          "text": "The atmosphere of CMR Medchal is beautiful. Very energetic technical fests and solid placements."
+        }
+      ],
+      "admissionProcess": "Based on rank achieved in TG EAPCET or national engineering eligibility examinations."
+    },
+    {
+      "id": "malla-reddy",
+      "name": "Malla Reddy University",
+      "state": "Telangana",
+      "city": "Maisammaguda",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "One of the largest private state universities in Hyderabad, featuring multi-specialty technical schools.",
+      "about": "Malla Reddy University (MRU) is established with massive, world-class educational infrastructures. It delivers globally competitive technical and management curriculum backed by research, innovation, and direct multinational corporate placements.",
+      "imageUrl": "/images/malla_reddy_university.jpg",
+      "gallery": [
+        "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "40.0 LPA",
+      "averagePackage": "6.4 LPA",
+      "placementRate": "97%",
+      "recruiters": [
+        "Amazon",
+        "Microsoft",
+        "TCS Ninja",
+        "Capgemini",
+        "IBM",
+        "Tech Mahindra",
+        "Cognizant"
+      ],
+      "courses": [
+        {
+          "name": "B.Tech CSE - AI & ML",
+          "duration": "4 Years",
+          "fees": "2,00,000 / year"
+        },
+        {
+          "name": "B.Tech CSE - Data Science",
+          "duration": "4 Years",
+          "fees": "1,90,000 / year"
+        },
+        {
+          "name": "Integrated Degree (BA / B.Com + Civil Services / Bank Exam Prep)",
+          "duration": "3 Years",
+          "fees": "85,000 / year"
+        },
+        {
+          "name": "B.Sc Agriculture (Hons)",
+          "duration": "4 Years",
+          "fees": "1,10,000 / year"
+        },
+        {
+          "name": "MBA Digital Marketing",
+          "duration": "2 Years",
+          "fees": "1,30,000 / year"
+        }
+      ],
+      "infrastructure": [
+        "Nvidia Deep Learning Institute",
+        "Agriculture Research fields",
+        "Advanced chemistry labs",
+        "Wi-Fi enabled campus squares"
+      ],
+      "hostelInfo": "Modern air-conditioned residential spaces, safe gates, clean state-of-the-art mess kitchen providing diverse Indian meals.",
+      "sportsFacilities": [
+        "Full-size Cricket turf",
+        "Football courts",
+        "Professional Volleyball sand court",
+        "Table Tennis rooms"
+      ],
+      "facultyCount": 520,
+      "reviews": [
+        {
+          "author": "Sai Kiran",
+          "rating": 5,
+          "text": "Massive university. The peer learning and college events are very inspiring. Direct placements are top-tier."
+        }
+      ],
+      "admissionProcess": "Through TG EAPCET ranking or Malla Reddy University Entrance Test (MRUET)."
+    },
+    {
+      "id": "tapasya-college",
+      "name": "Tapasya College (Tapasya Educational Institutions)",
+      "state": "Telangana",
+      "city": "Hyderabad & Vijayawada",
+      "naacGrade": "A",
+      "nbaAccredited": true,
+      "shortDescription": "Premier commerce, management, computer science, and creative arts college with campuses in Telangana & Andhra Pradesh.",
+      "about": "Tapasya College (Tapasya Educational Institutions) is one of South India’s most renowned higher education networks with cutting-edge campuses in Hyderabad, Secunderabad, and Vijayawada. Specializing in career-focused undergraduate degrees after 10+2 / Intermediate, Tapasya delivers industry-driven coaching in Commerce, Business Analytics, Computer Science, Economics, Fashion Designing, and Interior Design alongside integrated professional certifications (ACCA, CMA, CA foundation, Civil Services & Banking mentorship).",
+      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+      ],
+      "highestPackage": "16.5 LPA",
+      "averagePackage": "5.8 LPA",
+      "placementRate": "96%",
+      "recruiters": [
+        "Deloitte",
+        "Ernst & Young (EY)",
+        "PwC",
+        "KPMG",
+        "Amazon",
+        "ICICI Bank",
+        "HDFC Bank",
+        "Genpact",
+        "Wipro",
+        "Tech Mahindra"
+      ],
+      "campusLocations": [
+        "Hyderabad (Telangana): Narayanaguda, Lakdikapul, Dilsukhnagar, Kukatpally, Secunderabad, Madhapur",
+        "Andhra Pradesh: Vijayawada (Benz Circle & Governorpet), Guntur, Visakhapatnam"
+      ],
+      "courses": [
+        {
+          "name": "B.Com — Finance",
+          "duration": "3 Years",
+          "fees": "65,000 / year"
+        },
+        {
+          "name": "B.Com — Computer Applications",
+          "duration": "3 Years",
+          "fees": "70,000 / year"
+        },
+        {
+          "name": "B.Com — Taxation",
+          "duration": "3 Years",
+          "fees": "65,000 / year"
+        },
+        {
+          "name": "B.Com — Business Analytics",
+          "duration": "3 Years",
+          "fees": "85,000 / year"
+        },
+        {
+          "name": "BBA (Bachelor of Business Administration)",
+          "duration": "3 Years",
+          "fees": "80,000 / year"
+        },
+        {
+          "name": "BBA Business Analytics",
+          "duration": "3 Years",
+          "fees": "95,000 / year"
+        },
+        {
+          "name": "B.Sc Computer Science",
+          "duration": "3 Years",
+          "fees": "75,000 / year"
+        },
+        {
+          "name": "B.Sc Economics",
+          "duration": "3 Years",
+          "fees": "70,000 / year"
+        },
+        {
+          "name": "BA Interior Design",
+          "duration": "3 Years",
+          "fees": "90,000 / year"
+        },
+        {
+          "name": "BA Fashion Designing",
+          "duration": "3 Years",
+          "fees": "90,000 / year"
+        }
+      ],
+      "eligibility": "Passed 10+2 / Intermediate (MEC, CEC, MPC, BiPC, HEC) or CBSE / ICSE / State Board equivalent from a recognized board with minimum 50% aggregate marks.",
+      "qualificationsAccepted": [
+        "10+2 / Intermediate (MEC, CEC, MPC, BiPC, HEC)",
+        "CBSE Class XII",
+        "ICSE / ISC Class XII",
+        "State Open School (TOSS / APOSS)"
+      ],
+      "admissionDetails": "Direct Merit Admissions based on Intermediate / 10+2 marks, followed by personalized career counseling and personal interview. Early-bird merit scholarships up to 40% are available for top performers.",
+      "admissionProcess": "Direct online admission through EduConnect / Walk-in counseling with Intermediate marks memo, Transfer Certificate, and ID proof.",
+      "contactInfo": {
+        "phone": "+91 99887 76655 / 1800 200 4567 / 040-27558899",
+        "email": "admissions@tapasyacollege.in / info@tapasyacollege.in",
+        "address": "Central Campus: 3-6-524, Beside Minerva Coffee Shop, Himayatnagar / Narayanaguda, Hyderabad, Telangana - 500029"
+      },
+      "websiteUrl": "https://www.tapasyacollege.in",
+      "infrastructure": [
+        "Air-conditioned Smart Interactive Classrooms",
+        "High-End Computer Science & Analytics Labs",
+        "Dedicated Fashion Design Studios & Sewing Labs",
+        "Interior Architecture & Drafting Labs",
+        "Finance Trading Simulator & Digital Library",
+        "State-of-the-Art Auditorium & Seminar Halls"
+      ],
+      "hostelInfo": "Separate safe, modern hostel accommodations for boys & girls with Wi-Fi, hygienic cafeteria meals, and 24/7 security.",
+      "sportsFacilities": [
+        "Indoor Recreation Lounge",
+        "Table Tennis Arena",
+        "Badminton Court",
+        "Yoga & Fitness Zone"
+      ],
+      "facultyCount": 180,
+      "reviews": [
+        {
+          "author": "K. Sai Praneeth (B.Com Analytics)",
+          "rating": 5,
+          "text": "Tapasya is the top destination for commerce and analytics in Hyderabad. Big 4 companies like Deloitte and EY hire regularly!"
+        },
+        {
+          "author": "Meghana R. (BA Fashion Designing)",
+          "rating": 5,
+          "text": "The design studios and hands-on workshops are incredible. Highly supportive faculty and great industry exposure."
+        }
+      ]
+    }
+  ],
+  "counsellors": [
+    {
+      "id": "COUNSEL-001",
+      "fullName": "Dr. Lakshmi Prasad",
+      "email": "lakshmi.prasad@educonnect.in",
+      "mobile": "9876543211",
+      "specialization": "Engineering & Integrated Degrees (IAS/Banking)",
+      "assignedStudentsCount": 1,
+      "rating": 4.9,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "active": true
+    },
+    {
+      "id": "COUNSEL-002",
+      "fullName": "Prof. Sandeep Rao",
+      "email": "sandeep.rao@educonnect.in",
+      "mobile": "9876543212",
+      "specialization": "Management, Commerce & Computer Applications",
+      "assignedStudentsCount": 1,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "active": true
+    },
+    {
+      "id": "COUNSEL-003",
+      "fullName": "Dr. Ananya Sharma",
+      "email": "ananya.sharma@educonnect.in",
+      "mobile": "9876543213",
+      "specialization": "Sciences, Pharmacy & Allied Healthcare",
+      "assignedStudentsCount": 0,
+      "rating": 4.95,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "active": true
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-001",
+      "studentId": "EDU-2026-001",
+      "senderId": "COUNSEL-001",
+      "senderName": "Dr. Lakshmi Prasad (Counselor)",
+      "senderRole": "counsellor",
+      "message": "Hello Aryan! I am your dedicated admissions counselor. Congratulations on registering with EduConnect. Please complete your assigned NACAT assessment exam so we can review your scorecard and recommend tailored college options.",
+      "timestamp": "2026-09-27T06:54:43.616Z",
+      "read": true
+    },
+    {
+      "id": "msg-1790829557234",
+      "studentId": "EDU-2026-001",
+      "senderId": "COUNSEL-EDU-2026-001",
+      "senderName": "Prof. Sandeep Rao",
+      "senderRole": "counsellor",
+      "message": "Hello! I have been assigned as your academic counselor at EduConnect India. Note: \"Excellent student, highly interested in computer engineering. Assigned state aptitude test.\" Feel free to reply with any questions regarding college admissions or test papers!",
+      "timestamp": "2026-10-01T04:39:17.234Z",
+      "read": false
+    },
+    {
+      "id": "msg-1790829630196",
+      "studentId": "EDU-2026-001",
+      "senderId": "EDU-2026-001",
+      "senderName": "Aryan Sharma",
+      "senderRole": "student",
+      "message": "hi",
+      "timestamp": "2026-10-01T04:40:30.196Z",
+      "read": false
+    }
+  ],
+  "newsletterSubscribers": [],
+  "passwordResetLogs": [
+    {
+      "id": "log-1790933923113-718",
+      "timestamp": "2026-10-02T09:38:43.113Z",
+      "eventType": "reset_success",
+      "eventTitle": "Password Reset Completed Successfully",
+      "userIdentifier": "nexoraeca@gmail.com",
+      "targetEmail": "nexoraeca@gmail.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "deliveryService": "firebase_auth",
+      "deliveryStatus": "delivered",
+      "ipAddress": "127.0.0.1",
+      "details": "Password updated successfully via verified OTP code for account: nexoraeca@gmail.com."
+    },
+    {
+      "id": "log-1790933917214-667",
+      "timestamp": "2026-10-02T09:38:37.214Z",
+      "eventType": "otp_requested",
+      "eventTitle": "Password Reset Email Sent via Firebase Auth",
+      "userIdentifier": "nexoraeca@gmail.com",
+      "targetEmail": "nexoraeca@gmail.com",
+      "userRole": "student",
+      "status": "ATTEMPT",
+      "deliveryService": "firebase_auth",
+      "deliveryStatus": "delivered",
+      "messageId": "FIREBASE-1790933917214",
+      "ipAddress": "127.0.0.1",
+      "details": "Official password reset email dispatched directly to nexoraeca@gmail.com via Google Firebase Free Service."
+    },
+    {
+      "id": "log-1790933510983-959",
+      "timestamp": "2026-10-02T09:31:50.983Z",
+      "eventType": "otp_requested",
+      "eventTitle": "Firebase Auth Password Reset Email Sent",
+      "userIdentifier": "student",
+      "targetEmail": "aryan@example.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "deliveryService": "firebase_auth",
+      "deliveryStatus": "sent",
+      "messageId": "FB-1790933510983",
+      "ipAddress": "127.0.0.1",
+      "details": "Official Firebase Auth password reset email dispatched directly to aryan@example.com."
+    },
+    {
+      "id": "log-1790933505516-552",
+      "timestamp": "2026-10-02T09:31:45.516Z",
+      "eventType": "reset_success",
+      "eventTitle": "Password Reset Completed Successfully",
+      "userIdentifier": "aryan@example.com",
+      "targetEmail": "aryan@example.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "deliveryService": "simulated",
+      "deliveryStatus": "delivered",
+      "ipAddress": "127.0.0.1",
+      "details": "Password updated successfully via verified OTP code for account: aryan@example.com."
+    },
+    {
+      "id": "log-1790933499275-254",
+      "timestamp": "2026-10-02T09:31:39.275Z",
+      "eventType": "otp_requested",
+      "eventTitle": "Password Reset OTP Dispatched",
+      "userIdentifier": "aryan@example.com",
+      "targetEmail": "aryan@example.com",
+      "userRole": "student",
+      "status": "ATTEMPT",
+      "deliveryService": "simulated",
+      "deliveryStatus": "simulated",
+      "messageId": "SIM-1790933499275-8337",
+      "ipAddress": "127.0.0.1",
+      "details": "6-digit reset verification code generated for aryan@example.com. (Demo Mode: code 345408 ready for verification)."
+    },
+    {
+      "id": "log-1790586235223-168",
+      "timestamp": "2026-09-28T09:03:55.223Z",
+      "eventType": "password_changed",
+      "eventTitle": "Password Changed Successfully",
+      "userIdentifier": "test.candidate@gmail.com",
+      "targetEmail": "test.candidate@gmail.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "ipAddress": "127.0.0.1",
+      "details": "User \"test.candidate@gmail.com\" successfully replaced temporary/old password with personal credentials."
+    },
+    {
+      "id": "log-1790586235202-355",
+      "timestamp": "2026-09-28T09:03:55.202Z",
+      "eventType": "password_change_failed",
+      "eventTitle": "Password Change Failed (Incorrect Old Password)",
+      "userIdentifier": "test.candidate@gmail.com",
+      "targetEmail": "test.candidate@gmail.com",
+      "userRole": "student",
+      "status": "FAILED",
+      "ipAddress": "127.0.0.1",
+      "details": "Old/temporary password validation failed for user \"test.candidate@gmail.com\"."
+    },
+    {
+      "id": "log-1786899120000",
+      "timestamp": "2026-09-28T08:41:06.242Z",
+      "eventType": "password_changed",
+      "eventTitle": "First-Time Password Change Completed",
+      "userIdentifier": "raviteja.test@example.com",
+      "targetEmail": "raviteja.test@example.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "ipAddress": "103.117.240.12",
+      "details": "User successfully replaced auto-generated temporary password with personal password."
+    },
+    {
+      "id": "log-1786899060000",
+      "timestamp": "2026-09-28T08:31:06.242Z",
+      "eventType": "password_change_failed",
+      "eventTitle": "Incorrect Temporary Password Attempt",
+      "userIdentifier": "raviteja.test@example.com",
+      "targetEmail": "raviteja.test@example.com",
+      "userRole": "student",
+      "status": "FAILED",
+      "ipAddress": "103.117.240.12",
+      "details": "Old password entered did not match temporary credentials on file."
+    },
+    {
+      "id": "log-1786898920000",
+      "timestamp": "2026-09-28T08:16:06.242Z",
+      "eventType": "account_created",
+      "eventTitle": "Student Account & Temporary Password Created",
+      "userIdentifier": "raviteja.test@example.com",
+      "targetEmail": "raviteja.test@example.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "ipAddress": "103.117.240.12",
+      "details": "Auto-generated temporary password Stud@9195 upon Apply Online submission."
+    },
+    {
+      "id": "log-1786895000000",
+      "timestamp": "2026-09-28T05:56:06.242Z",
+      "eventType": "reset_success",
+      "eventTitle": "Self-Service Password Reset Completed",
+      "userIdentifier": "aryan@example.com",
+      "targetEmail": "aryan@example.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "ipAddress": "49.207.218.45",
+      "details": "Password verified and updated using 6-digit OTP confirmation."
+    },
+    {
+      "id": "log-1786894800000",
+      "timestamp": "2026-09-28T05:52:06.242Z",
+      "eventType": "otp_requested",
+      "eventTitle": "Password Reset OTP Dispatched",
+      "userIdentifier": "aryan@example.com",
+      "targetEmail": "aryan@example.com",
+      "userRole": "student",
+      "status": "ATTEMPT",
+      "ipAddress": "49.207.218.45",
+      "details": "Verification code dispatched to registered student email."
+    },
+    {
+      "id": "log-1786891000000",
+      "timestamp": "2026-09-28T00:56:06.242Z",
+      "eventType": "reset_failed",
+      "eventTitle": "Invalid Verification Code Attempt",
+      "userIdentifier": "priyapatel36",
+      "targetEmail": "priya.patel@example.com",
+      "userRole": "student",
+      "status": "FAILED",
+      "ipAddress": "157.34.122.9",
+      "details": "User entered invalid OTP code 998822 (3 failed attempts recorded)."
+    },
+    {
+      "id": "log-1786885000000",
+      "timestamp": "2026-09-27T14:56:06.242Z",
+      "eventType": "admin_manual_reset",
+      "eventTitle": "Administrator Manual Password Reset",
+      "userIdentifier": "EDU-2026-001",
+      "targetEmail": "aryan@example.com",
+      "userRole": "student",
+      "status": "SUCCESS",
+      "ipAddress": "127.0.0.1 (Admin Console)",
+      "details": "Admin user Prof. Rajesh Sengupta generated emergency temporary access key."
+    }
+  ],
+  "examRegistrations": [
+    {
+      "id": "ereg-1793266468009",
+      "studentId": "std-1",
+      "examId": "exam-aptitude-01",
+      "paymentStatus": "completed",
+      "paymentId": "FREE-PASS-338552",
+      "amount": 0,
+      "paymentMethod": "Sponsored / Free Assessment",
+      "paidAt": "2026-10-29T09:34:28.009Z",
+      "registrationStatus": "slot_booked",
+      "selectedSlotId": "slot-morning",
+      "scheduledDate": "25 November 2026",
+      "scheduledStartTime": "09:30 AM",
+      "scheduledEndTime": "11:30 AM",
+      "scheduledAt": "2026-10-29T09:34:28.009Z"
+    }
+  ],
+  "collegeRecommendations": [
+    {
+      "id": "rec-001",
+      "studentId": "EDU-2026-001",
+      "collegeId": "col-01",
+      "recommendedBy": "Dr. Lakshmi Prasad (Senior Academic Counselor)",
+      "recommendedByRole": "counsellor",
+      "note": "Recommended for B.Tech Computer Science & AI track. Excellent NAAC grade and top-tier placement partner network in Gujarat.",
+      "createdAt": "2026-10-02T07:13:47.821Z"
+    },
+    {
+      "id": "rec-002",
+      "studentId": "EDU-2026-001",
+      "collegeId": "col-02",
+      "recommendedBy": "Prof. Rajesh Sengupta (Admissions Admin)",
+      "recommendedByRole": "admin",
+      "note": "Top recommendation based on strong 12th STEM background. Offers merit-based academic scholarship concession.",
+      "createdAt": "2026-10-02T07:13:47.821Z"
+    }
+  ]
+}

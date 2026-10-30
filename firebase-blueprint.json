@@ -1,0 +1,111 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User account profile with role and authentication metadata",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "format": "email", "description": "User email address" },
+        "fullName": { "type": "string", "description": "Display name of the user", "maxLength": 100 },
+        "role": { "type": "string", "enum": ["super_admin", "admin", "counsellor", "student"], "description": "Assigned platform access role" },
+        "studentId": { "type": "string", "description": "Linked student identification ID", "maxLength": 50 },
+        "isSuspended": { "type": "boolean", "description": "Whether the user account is suspended" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Record creation timestamp" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Last update timestamp" }
+      },
+      "required": ["uid", "email", "fullName", "role"]
+    },
+    "College": {
+      "title": "College",
+      "description": "Partner university and college details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique college ID", "maxLength": 64 },
+        "name": { "type": "string", "description": "University name", "maxLength": 120 },
+        "state": { "type": "string", "description": "State location", "maxLength": 64 },
+        "city": { "type": "string", "description": "City location", "maxLength": 64 },
+        "naacGrade": { "type": "string", "description": "NAAC accreditation grade", "maxLength": 10 },
+        "nbaAccredited": { "type": "boolean", "description": "Whether NBA accredited" },
+        "shortDescription": { "type": "string", "description": "Brief summary", "maxLength": 300 },
+        "about": { "type": "string", "description": "Detailed institutional background", "maxLength": 2000 },
+        "imageUrl": { "type": "string", "description": "Featured campus image URL", "maxLength": 500 },
+        "highestPackage": { "type": "string", "description": "Highest placement offer", "maxLength": 50 },
+        "averagePackage": { "type": "string", "description": "Average placement package", "maxLength": 50 },
+        "placementRate": { "type": "string", "description": "Placement percentage metric", "maxLength": 20 }
+      },
+      "required": ["id", "name", "state", "city"]
+    },
+    "StudentApplication": {
+      "title": "StudentApplication",
+      "description": "Student candidate profile and enrollment record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Student ID (e.g., EDU-2026-xxx)", "maxLength": 64 },
+        "fullName": { "type": "string", "description": "Candidate full name", "maxLength": 100 },
+        "email": { "type": "string", "format": "email", "description": "Candidate email address" },
+        "mobile": { "type": "string", "description": "10-digit mobile contact", "maxLength": 20 },
+        "marks12th": { "type": "number", "description": "12th board or intermediate percentage" },
+        "interestedCourse": { "type": "string", "description": "Preferred undergraduate or postgraduate program", "maxLength": 100 },
+        "preferredState": { "type": "string", "description": "Preferred study state", "maxLength": 64 },
+        "assignedCounsellor": { "type": "string", "description": "Assigned academic counsellor name", "maxLength": 100 },
+        "admissionStatus": { "type": "string", "description": "Current admission pipeline status", "maxLength": 50 },
+        "registeredAt": { "type": "string", "format": "date-time", "description": "Registration submission timestamp" }
+      },
+      "required": ["id", "fullName", "email"]
+    },
+    "ExamAttempt": {
+      "title": "ExamAttempt",
+      "description": "Candidate aptitude exam attempt scorecard",
+      "type": "object",
+      "properties": {
+        "studentId": { "type": "string", "description": "Candidate student ID", "maxLength": 64 },
+        "examId": { "type": "string", "description": "Target exam identifier", "maxLength": 64 },
+        "score": { "type": "number", "description": "Total score attained" },
+        "maxScore": { "type": "number", "description": "Maximum exam score" },
+        "percentage": { "type": "number", "description": "Calculated score percentage" },
+        "passed": { "type": "boolean", "description": "Examination qualification status" },
+        "evaluationStatus": { "type": "string", "description": "Scorecard evaluation status", "maxLength": 50 },
+        "attemptedAt": { "type": "string", "format": "date-time", "description": "Attempt timestamp" }
+      },
+      "required": ["studentId", "examId", "score"]
+    },
+    "CollegeRecommendation": {
+      "title": "CollegeRecommendation",
+      "description": "Academic recommendation suggested by counselor and presented as AI match",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Recommendation identifier", "maxLength": 64 },
+        "studentId": { "type": "string", "description": "Target student ID", "maxLength": 64 },
+        "collegeId": { "type": "string", "description": "Recommended college ID", "maxLength": 64 },
+        "recommendedBy": { "type": "string", "description": "Counsellor or advisor name", "maxLength": 100 },
+        "recommendedByRole": { "type": "string", "description": "Role of recommending personnel", "maxLength": 50 },
+        "note": { "type": "string", "description": "Academic compatibility advisory note", "maxLength": 1000 },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Recommendation creation timestamp" }
+      },
+      "required": ["id", "studentId", "collegeId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Stores user account profile information keyed by Firebase Auth UID"
+    },
+    "/colleges/{collegeId}": {
+      "schema": { "$ref": "#/entities/College" },
+      "description": "Public partner colleges directory"
+    },
+    "/students/{studentId}": {
+      "schema": { "$ref": "#/entities/StudentApplication" },
+      "description": "Candidate profiles and enrollment records"
+    },
+    "/attempts/{attemptId}": {
+      "schema": { "$ref": "#/entities/ExamAttempt" },
+      "description": "Examination attempt records and evaluation scorecards"
+    },
+    "/recommendations/{recId}": {
+      "schema": { "$ref": "#/entities/CollegeRecommendation" },
+      "description": "College recommendations matched for students"
+    }
+  }
+}

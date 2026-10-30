@@ -1,0 +1,6 @@
+{
+  "name": "NEXORA Education & Career Academy",
+  "description": "NEXORA Education & Career Academy - Premium Higher Education Admission & Career Assessment Portal connecting Intermediate (10+2) students with top universities across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,65 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global Safety Net: Default-deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isStaff() {
+      return isSignedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        (getUserData().role == 'admin' || getUserData().role == 'super_admin' || getUserData().role == 'counsellor');
+    }
+
+    function isAdmin() {
+      return isSignedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        (getUserData().role == 'admin' || getUserData().role == 'super_admin');
+    }
+
+    // User profiles
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isStaff();
+      allow create: if isOwner(userId) || isAdmin();
+      allow update: if isOwner(userId) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // Colleges: publicly readable discovery directory, staff managed
+    match /colleges/{collegeId} {
+      allow read: if true;
+      allow write: if isStaff();
+    }
+
+    // Students applications
+    match /students/{studentId} {
+      allow read: if isSignedIn();
+      allow create: if true;
+      allow update, delete: if isStaff() || isSignedIn();
+    }
+
+    // Exam attempts & evaluations
+    match /attempts/{attemptId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update, delete: if isStaff();
+    }
+
+    // Recommendations curated by counselor & admissions
+    match /recommendations/{recId} {
+      allow read: if isSignedIn();
+      allow write: if isStaff();
+    }
+  }
+}
