@@ -800,11 +800,35 @@ async function startServer() {
   app.get("/api/neon/status", async (req: Request, res: Response) => {
     try {
       const sql = getNeonSql();
-      const versionResult = await sql.query("SELECT version();");
-      const appStateResult = await sql.query("SELECT collection_name, jsonb_array_length(records) as count FROM app_state ORDER BY collection_name;");
-      const usersCount = await sql.query("SELECT count(*) as count FROM users;");
-      const examsCount = await sql.query("SELECT count(*) as count FROM exams;");
-      const regCount = await sql.query("SELECT count(*) as count FROM exam_registrations;");
+      const [
+        versionResult,
+        appStateResult,
+        usersCount,
+        examsCount,
+        resultsCount,
+        collegesCount,
+        studentsCount,
+        registrationsCount,
+        examRegCount,
+        counsellorsCount,
+        recommendationsCount,
+        notificationsCount,
+        messagesCount
+      ] = await Promise.all([
+        sql.query("SELECT version();"),
+        sql.query("SELECT collection_name, jsonb_array_length(records) as count FROM app_state ORDER BY collection_name;"),
+        sql.query("SELECT count(*) as count FROM users;"),
+        sql.query("SELECT count(*) as count FROM exams;"),
+        sql.query("SELECT count(*) as count FROM exam_results;"),
+        sql.query("SELECT count(*) as count FROM colleges;"),
+        sql.query("SELECT count(*) as count FROM students;"),
+        sql.query("SELECT count(*) as count FROM registrations;"),
+        sql.query("SELECT count(*) as count FROM exam_registrations;"),
+        sql.query("SELECT count(*) as count FROM counsellors;"),
+        sql.query("SELECT count(*) as count FROM college_recommendations;"),
+        sql.query("SELECT count(*) as count FROM notifications;"),
+        sql.query("SELECT count(*) as count FROM messages;")
+      ]);
 
       res.json({
         success: true,
@@ -817,7 +841,15 @@ async function startServer() {
           tables: {
             users: Number(usersCount[0]?.count || 0),
             exams: Number(examsCount[0]?.count || 0),
-            examRegistrations: Number(regCount[0]?.count || 0)
+            results: Number(resultsCount[0]?.count || 0),
+            colleges: Number(collegesCount[0]?.count || 0),
+            students: Number(studentsCount[0]?.count || 0),
+            registrations: Number(registrationsCount[0]?.count || 0),
+            examRegistrations: Number(examRegCount[0]?.count || 0),
+            counsellors: Number(counsellorsCount[0]?.count || 0),
+            collegeRecommendations: Number(recommendationsCount[0]?.count || 0),
+            notifications: Number(notificationsCount[0]?.count || 0),
+            messages: Number(messagesCount[0]?.count || 0)
           }
         }
       });

@@ -1,113 +1,56 @@
 {
-  "users": [
-    {
-      "id": "EDU-2026-001",
-      "role": "student",
-      "status": "active",
-      "password": "password123",
-      "username": "STUDENT123",
-      "studentId": "EDU-2026-001"
-    },
-    {
-      "id": "ADMIN-001",
-      "role": "admin",
-      "email": "admin@educonnectindia.in",
-      "status": "active",
-      "fullName": "Prof. Rajesh Sengupta (Admissions Admin)",
-      "password": "Bharath@123",
-      "username": "admin"
-    },
-    {
-      "id": "user-1786892124687",
-      "role": "student",
-      "status": "active",
-      "password": "pass1428",
-      "username": "priyapatel36",
-      "studentId": "EDU-2026-0367"
-    },
-    {
-      "id": "SUPERADMIN-NEXORA",
-      "role": "super_admin",
-      "email": "nexoraeca@gmail.com",
-      "status": "active",
-      "fullName": "Dr. R. K. Varma (Chief Executive & Super Admin)",
-      "password": "Bharath@123",
-      "username": "nexoraeca@gmail.com",
-      "studentId": "EDU-2026-404"
-    },
+  "counsellors": [
     {
       "id": "COUNSEL-001",
-      "role": "counsellor",
       "email": "lakshmi.prasad@educonnect.in",
-      "status": "active",
-      "fullName": "Dr. Lakshmi Prasad (Senior Academic Counselor)",
-      "password": "counsel123",
-      "username": "counsellor"
+      "active": true,
+      "mobile": "9876543211",
+      "rating": 4.9,
+      "fullName": "Dr. Lakshmi Prasad",
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "specialization": "Engineering & Integrated Degrees (IAS/Banking)",
+      "assignedStudentsCount": 1
     },
     {
       "id": "COUNSEL-002",
-      "role": "counsellor",
       "email": "sandeep.rao@educonnect.in",
-      "status": "active",
-      "fullName": "Prof. Sandeep Rao (Engineering Counselor)",
-      "password": "counsel123",
-      "username": "counsellor2"
+      "active": true,
+      "mobile": "9876543212",
+      "rating": 4.8,
+      "fullName": "Prof. Sandeep Rao",
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "specialization": "Management, Commerce & Computer Applications",
+      "assignedStudentsCount": 1
     },
     {
-      "id": "STUDENT-001",
-      "role": "student",
-      "email": "aryan@example.com",
-      "status": "active",
-      "fullName": "Aryan Sharma",
-      "password": "student123",
-      "username": "student",
-      "studentId": "EDU-2026-001",
-      "mustChangePassword": false
-    },
-    {
-      "id": "user-1790579945306",
-      "role": "student",
-      "email": "raviteja.test@example.com",
-      "status": "active",
-      "fullName": "Ravi Teja Verma",
-      "password": "MySecurePass#2026",
-      "username": "raviteja.test@example.com",
-      "createdAt": "2026-09-28T07:19:05.306Z",
-      "studentId": "EDU-2026-496",
-      "mustChangePassword": false
-    },
-    {
-      "id": "user-1790586216374",
-      "role": "student",
-      "email": "test.candidate@gmail.com",
-      "status": "active",
-      "fullName": "Test Candidate",
-      "password": "MyNewSecurePassword!2026",
-      "username": "test.candidate@gmail.com",
-      "createdAt": "2026-09-28T09:03:36.374Z",
-      "studentId": "EDU-2026-527",
-      "mustChangePassword": false
-    },
-    {
-      "id": "user-1790927420702",
-      "role": "student",
-      "email": "testuser99@example.com",
-      "status": "active",
-      "fullName": "Test User",
-      "password": "Stud@6755",
-      "username": "testuser99@example.com",
-      "createdAt": "2026-10-02T07:50:20.702Z",
-      "studentId": "EDU-2026-436",
-      "temporaryPassword": "Stud@6755",
-      "mustChangePassword": true
-    },
-    {
-      "id": "SUPERADMIN-002",
-      "role": "super_admin",
-      "email": "director@educonnectindia.in",
-      "fullName": "Dr. R. K. Varma (Chief Executive & Super Admin)",
-      "password": "superadmin123",
-      "username": "superadmin"
+      "id": "COUNSEL-003",
+      "email": "ananya.sharma@educonnect.in",
+      "active": true,
+      "mobile": "9876543213",
+      "rating": 4.95,
+      "fullName": "Dr. Ananya Sharma",
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "specialization": "Sciences, Pharmacy & Allied Healthcare",
+      "assignedStudentsCount": 0
     }
   ],
   "exams": [
@@ -124,7 +67,7 @@
           "endTime": "12:00 PM",
           "capacity": 50,
           "startTime": "10:00 AM",
-          "bookedCount": 16
+          "bookedCount": 18
         },
         {
           "id": "slot-afternoon",
@@ -298,124 +241,6 @@
       "passPercentage": 50,
       "durationMinutes": 120,
       "resultPublishAt": "2026-11-25T10:00:00.000Z"
-    }
-  ],
-  "students": [
-    {
-      "id": "EDU-2026-001",
-      "dob": "2008-04-12",
-      "email": "aryan@example.com",
-      "gender": "Male",
-      "mobile": "9876543210",
-      "fullName": "Aryan Sharma",
-      "marks12th": 92,
-      "college12th": "Delhi Public School",
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Telangana",
-      "admissionStatus": "Exam Completed",
-      "counsellorNotes": "Excellent student, highly interested in computer engineering. Assigned state aptitude test.",
-      "interestedCourse": "B.Tech",
-      "assignedCounsellor": "Prof. Sandeep Rao"
-    },
-    {
-      "id": "EDU-2026-0367",
-      "dob": "2008-08-15",
-      "email": "priya@example.com",
-      "gender": "Female",
-      "mobile": "9123456789",
-      "fullName": "Priya Patel",
-      "marks12th": 88,
-      "college12th": "St. Xavier College, Ahmedabad",
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Gujarat",
-      "admissionStatus": "Counseling",
-      "counsellorNotes": "Approved from registration portal. Automatically assigned general aptitude exam.",
-      "interestedCourse": "B.Tech",
-      "assignedCounsellor": "Trained Admission Counsellor"
-    },
-    {
-      "id": "EDU-2026-496",
-      "dob": "2007-06-15",
-      "email": "raviteja.test@example.com",
-      "gender": "Not specified",
-      "mobile": "9848022338",
-      "fullName": "Ravi Teja Verma",
-      "marks12th": 0,
-      "college12th": "Narayana Junior College, Vijayawada",
-      "registeredAt": "2026-09-28T07:19:05.306Z",
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Telangana",
-      "admissionStatus": "Counseling",
-      "counsellorNotes": "Account automatically created upon online application submission.",
-      "interestedCourse": "B.Tech Computer Science & AI",
-      "preferredCollege": "Malla Reddy University",
-      "assignedCounsellor": "Trained Admission Counsellor"
-    },
-    {
-      "id": "EDU-2026-571",
-      "dob": "2005-04-12",
-      "email": "test.candidate@gmail.com",
-      "gender": "Male",
-      "mobile": "9876543210",
-      "fullName": "Test Candidate",
-      "marks12th": 0,
-      "college12th": "",
-      "registeredAt": "2026-09-28T09:03:36.373Z",
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Gujarat",
-      "admissionStatus": "Counseling",
-      "counsellorNotes": "Account automatically created upon online application submission.",
-      "interestedCourse": "B.Tech Computer Science & AI",
-      "preferredCollege": "",
-      "assignedCounsellor": "Trained Admission Counsellor"
-    },
-    {
-      "id": "EDU-2026-527",
-      "dob": "2005-04-12",
-      "email": "test.candidate@gmail.com",
-      "gender": "Male",
-      "mobile": "9876543210",
-      "fullName": "Test Candidate",
-      "marks12th": 96,
-      "college12th": "",
-      "registeredAt": "2026-09-28T09:03:47.032Z",
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Gujarat",
-      "admissionStatus": "Counseling",
-      "counsellorNotes": "Account automatically created upon online application submission.",
-      "interestedCourse": "B.Tech Computer Science & AI",
-      "preferredCollege": "",
-      "assignedCounsellor": "Trained Admission Counsellor"
-    },
-    {
-      "id": "EDU-2026-436",
-      "dob": "",
-      "email": "testuser99@example.com",
-      "gender": "Not specified",
-      "mobile": "9999988888",
-      "fullName": "Test User",
-      "marks12th": 95,
-      "college12th": "",
-      "registeredAt": "2026-10-02T07:50:20.702Z",
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Telangana",
-      "admissionStatus": "Counseling",
-      "counsellorNotes": "Account automatically created upon online application submission.",
-      "interestedCourse": "B.Tech Computer Science & AI",
-      "preferredCollege": "",
-      "assignedCounsellor": "Trained Admission Counsellor"
-    },
-    {
-      "id": "EDU-2026-404",
-      "email": "bharathsathyasaijanga26@gmail.com",
-      "mobile": "9876543210",
-      "fullName": "Bharathsathyasaijanga26",
-      "marks12th": 92,
-      "assignedExamId": "exam-aptitude-01",
-      "preferredState": "Telangana",
-      "admissionStatus": "Applied Online",
-      "interestedCourse": "B.Tech Computer Science & AI",
-      "assignedCounsellor": "Dr. Lakshmi Prasad"
     }
   ],
   "colleges": [
@@ -1724,215 +1549,16 @@
       "studentId": "EDU-2026-001",
       "examId": "exam-aptitude-01",
       "paymentStatus": "completed",
-      "paymentId": "TXN-22812169",
+      "paymentId": "TXN-40285593",
       "amount": 500,
       "paymentMethod": "UPI",
-      "paidAt": "2026-11-23T11:27:02.761Z",
-      "registrationStatus": "slot_booked",
+      "paidAt": "2026-11-23T12:12:38.439Z",
+      "registrationStatus": "attempted",
       "selectedSlotId": "slot-morning",
       "scheduledDate": "20 November 2026",
       "scheduledStartTime": "10:00 AM",
       "scheduledEndTime": "12:00 PM",
-      "scheduledAt": "2026-11-23T11:27:02.784Z"
-    }
-  ],
-  "counsellors": [
-    {
-      "id": "COUNSEL-001",
-      "email": "lakshmi.prasad@educonnect.in",
-      "active": true,
-      "mobile": "9876543211",
-      "rating": 4.9,
-      "fullName": "Dr. Lakshmi Prasad",
-      "availableDays": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "specialization": "Engineering & Integrated Degrees (IAS/Banking)",
-      "assignedStudentsCount": 1
-    },
-    {
-      "id": "COUNSEL-002",
-      "email": "sandeep.rao@educonnect.in",
-      "active": true,
-      "mobile": "9876543212",
-      "rating": 4.8,
-      "fullName": "Prof. Sandeep Rao",
-      "availableDays": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "specialization": "Management, Commerce & Computer Applications",
-      "assignedStudentsCount": 1
-    },
-    {
-      "id": "COUNSEL-003",
-      "email": "ananya.sharma@educonnect.in",
-      "active": true,
-      "mobile": "9876543213",
-      "rating": 4.95,
-      "fullName": "Dr. Ananya Sharma",
-      "availableDays": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Saturday"
-      ],
-      "specialization": "Sciences, Pharmacy & Allied Healthcare",
-      "assignedStudentsCount": 0
-    }
-  ],
-  "attempts": [
-    {
-      "rank": 1,
-      "score": 10,
-      "examId": "exam-aptitude-01",
-      "passed": true,
-      "answers": {
-        "q1": [
-          1
-        ],
-        "q2": [
-          1
-        ],
-        "q3": [
-          1
-        ],
-        "q4": [
-          0,
-          1,
-          2
-        ],
-        "q5": [
-          0
-        ],
-        "q6": [
-          3
-        ],
-        "q7": [
-          2
-        ],
-        "q8": [
-          1
-        ],
-        "q9": [
-          1
-        ],
-        "q10": [
-          1
-        ]
-      },
-      "maxScore": 10,
-      "examTitle": "NACAT Scholarship Assessment",
-      "studentId": "EDU-2026-001",
-      "percentage": 100,
-      "attemptedAt": "2026-08-16T14:40:00.000Z",
-      "evaluatedAt": "2026-08-16T14:50:00.000Z",
-      "isPublished": true,
-      "studentName": "Aryan Sharma",
-      "examDuration": 120,
-      "studentEmail": "aryan@example.com",
-      "evaluatorName": "Dr. Lakshmi Prasad (Chief Examiner)",
-      "questionMarks": {
-        "q1": 1,
-        "q2": 1,
-        "q3": 1,
-        "q4": 1,
-        "q5": 1,
-        "q6": 1,
-        "q7": 1,
-        "q8": 1,
-        "q9": 1,
-        "q10": 1
-      },
-      "studentCourse": "B.Tech",
-      "passPercentage": 50,
-      "evaluationStatus": "Graded & Verified",
-      "evaluatorRemarks": "Outstanding performance across all aptitude sections. Recommended for 50% Merit Scholarship in B.Tech CSE.",
-      "questionFeedback": {
-        "q1": "Accurate computer science knowledge",
-        "q4": "Comprehensive understanding of STEM"
-      },
-      "student12thMarks": 92
-    },
-    {
-      "rank": 2,
-      "score": 7.5,
-      "examId": "exam-aptitude-01",
-      "passed": false,
-      "answers": {
-        "q1": [
-          1
-        ],
-        "q2": [
-          1
-        ],
-        "q3": [
-          1
-        ],
-        "q4": [
-          0,
-          1
-        ],
-        "q5": [
-          0
-        ],
-        "q6": [
-          0
-        ],
-        "q7": [
-          2
-        ],
-        "q8": [
-          1
-        ],
-        "q9": [
-          0
-        ],
-        "q10": [
-          1
-        ]
-      },
-      "maxScore": 10,
-      "examTitle": "NACAT Scholarship Assessment",
-      "studentId": "EDU-2026-0367",
-      "percentage": null,
-      "attemptedAt": "2026-08-16T14:55:00.000Z",
-      "evaluatedAt": "2026-08-16T15:03:39.574Z",
-      "isPublished": true,
-      "studentName": "Priya Patel",
-      "examDuration": 120,
-      "studentEmail": "priya@example.com",
-      "evaluatorName": "Chief Examination Officer",
-      "questionMarks": {
-        "q1": 1,
-        "q2": 1,
-        "q3": 1,
-        "q4": 0.5,
-        "q5": 1,
-        "q6": 0,
-        "q7": 1,
-        "q8": 1,
-        "q9": 0,
-        "q10": 1
-      },
-      "studentCourse": "B.Tech",
-      "passPercentage": 50,
-      "evaluationStatus": "Graded & Verified",
-      "evaluatorRemarks": "Evaluated by Exam Controller.",
-      "questionFeedback": {
-        "q4": "Partial credit awarded for identifying Science & Technology",
-        "q6": "Needs review on Board classification"
-      },
-      "student12thMarks": 88
+      "scheduledAt": "2026-11-23T12:12:38.455Z"
     }
   ],
   "registrations": [
@@ -2056,36 +1682,246 @@
       "recommendedByRole": "admin"
     }
   ],
-  "messages": [
+  "students": [
     {
-      "id": "msg-001",
-      "read": true,
-      "message": "Hello Aryan! I am your dedicated admissions counselor. Congratulations on registering with EduConnect. Please complete your assigned NACAT assessment exam so we can review your scorecard and recommend tailored college options.",
-      "senderId": "COUNSEL-001",
-      "studentId": "EDU-2026-001",
-      "timestamp": "2026-09-27T06:54:43.616Z",
-      "senderName": "Dr. Lakshmi Prasad (Counselor)",
-      "senderRole": "counsellor"
+      "id": "EDU-2026-001",
+      "dob": "2008-04-12",
+      "email": "aryan@example.com",
+      "gender": "Male",
+      "mobile": "9876543210",
+      "fullName": "Aryan Sharma",
+      "marks12th": 92,
+      "college12th": "Delhi Public School",
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Telangana",
+      "admissionStatus": "Exam Completed",
+      "counsellorNotes": "Excellent student, highly interested in computer engineering. Assigned state aptitude test.",
+      "interestedCourse": "B.Tech",
+      "assignedCounsellor": "Prof. Sandeep Rao"
     },
     {
-      "id": "msg-1790829557234",
-      "read": false,
-      "message": "Hello! I have been assigned as your academic counselor at EduConnect India. Note: \"Excellent student, highly interested in computer engineering. Assigned state aptitude test.\" Feel free to reply with any questions regarding college admissions or test papers!",
-      "senderId": "COUNSEL-EDU-2026-001",
-      "studentId": "EDU-2026-001",
-      "timestamp": "2026-10-01T04:39:17.234Z",
-      "senderName": "Prof. Sandeep Rao",
-      "senderRole": "counsellor"
+      "id": "EDU-2026-0367",
+      "dob": "2008-08-15",
+      "email": "priya@example.com",
+      "gender": "Female",
+      "mobile": "9123456789",
+      "fullName": "Priya Patel",
+      "marks12th": 88,
+      "college12th": "St. Xavier College, Ahmedabad",
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Gujarat",
+      "admissionStatus": "Counseling",
+      "counsellorNotes": "Approved from registration portal. Automatically assigned general aptitude exam.",
+      "interestedCourse": "B.Tech",
+      "assignedCounsellor": "Trained Admission Counsellor"
     },
     {
-      "id": "msg-1790829630196",
-      "read": false,
-      "message": "hi",
-      "senderId": "EDU-2026-001",
+      "id": "EDU-2026-496",
+      "dob": "2007-06-15",
+      "email": "raviteja.test@example.com",
+      "gender": "Not specified",
+      "mobile": "9848022338",
+      "fullName": "Ravi Teja Verma",
+      "marks12th": 0,
+      "college12th": "Narayana Junior College, Vijayawada",
+      "registeredAt": "2026-09-28T07:19:05.306Z",
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Telangana",
+      "admissionStatus": "Counseling",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredCollege": "Malla Reddy University",
+      "assignedCounsellor": "Trained Admission Counsellor"
+    },
+    {
+      "id": "EDU-2026-571",
+      "dob": "2005-04-12",
+      "email": "test.candidate@gmail.com",
+      "gender": "Male",
+      "mobile": "9876543210",
+      "fullName": "Test Candidate",
+      "marks12th": 0,
+      "college12th": "",
+      "registeredAt": "2026-09-28T09:03:36.373Z",
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Gujarat",
+      "admissionStatus": "Counseling",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredCollege": "",
+      "assignedCounsellor": "Trained Admission Counsellor"
+    },
+    {
+      "id": "EDU-2026-527",
+      "dob": "2005-04-12",
+      "email": "test.candidate@gmail.com",
+      "gender": "Male",
+      "mobile": "9876543210",
+      "fullName": "Test Candidate",
+      "marks12th": 96,
+      "college12th": "",
+      "registeredAt": "2026-09-28T09:03:47.032Z",
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Gujarat",
+      "admissionStatus": "Counseling",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredCollege": "",
+      "assignedCounsellor": "Trained Admission Counsellor"
+    },
+    {
+      "id": "EDU-2026-436",
+      "dob": "",
+      "email": "testuser99@example.com",
+      "gender": "Not specified",
+      "mobile": "9999988888",
+      "fullName": "Test User",
+      "marks12th": 95,
+      "college12th": "",
+      "registeredAt": "2026-10-02T07:50:20.702Z",
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Telangana",
+      "admissionStatus": "Counseling",
+      "counsellorNotes": "Account automatically created upon online application submission.",
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "preferredCollege": "",
+      "assignedCounsellor": "Trained Admission Counsellor"
+    },
+    {
+      "id": "EDU-2026-404",
+      "email": "bharathsathyasaijanga26@gmail.com",
+      "mobile": "9876543210",
+      "fullName": "Bharathsathyasaijanga26",
+      "marks12th": 92,
+      "assignedExamId": "exam-aptitude-01",
+      "preferredState": "Telangana",
+      "admissionStatus": "Applied Online",
+      "interestedCourse": "B.Tech Computer Science & AI",
+      "assignedCounsellor": "Dr. Lakshmi Prasad"
+    }
+  ],
+  "attempts": [
+    {
+      "rank": 2,
+      "score": 7.5,
+      "examId": "exam-aptitude-01",
+      "passed": false,
+      "answers": {
+        "q1": [
+          1
+        ],
+        "q2": [
+          1
+        ],
+        "q3": [
+          1
+        ],
+        "q4": [
+          0,
+          1
+        ],
+        "q5": [
+          0
+        ],
+        "q6": [
+          0
+        ],
+        "q7": [
+          2
+        ],
+        "q8": [
+          1
+        ],
+        "q9": [
+          0
+        ],
+        "q10": [
+          1
+        ]
+      },
+      "maxScore": 10,
+      "examTitle": "NACAT Scholarship Assessment",
+      "studentId": "EDU-2026-0367",
+      "percentage": null,
+      "attemptedAt": "2026-08-16T14:55:00.000Z",
+      "evaluatedAt": "2026-08-16T15:03:39.574Z",
+      "isPublished": true,
+      "studentName": "Priya Patel",
+      "examDuration": 120,
+      "studentEmail": "priya@example.com",
+      "evaluatorName": "Chief Examination Officer",
+      "questionMarks": {
+        "q1": 1,
+        "q2": 1,
+        "q3": 1,
+        "q4": 0.5,
+        "q5": 1,
+        "q6": 0,
+        "q7": 1,
+        "q8": 1,
+        "q9": 0,
+        "q10": 1
+      },
+      "studentCourse": "B.Tech",
+      "passPercentage": 50,
+      "evaluationStatus": "Graded & Verified",
+      "evaluatorRemarks": "Evaluated by Exam Controller.",
+      "questionFeedback": {
+        "q4": "Partial credit awarded for identifying Science & Technology",
+        "q6": "Needs review on Board classification"
+      },
+      "student12thMarks": 88
+    },
+    {
       "studentId": "EDU-2026-001",
-      "timestamp": "2026-10-01T04:40:30.196Z",
-      "senderName": "Aryan Sharma",
-      "senderRole": "student"
+      "examId": "exam-aptitude-01",
+      "answers": {
+        "q1": [
+          1
+        ],
+        "q2": [
+          1
+        ],
+        "q3": [
+          1
+        ],
+        "q4": [
+          0,
+          1,
+          2
+        ],
+        "q5": [
+          0
+        ]
+      },
+      "questionMarks": {
+        "q1": 1,
+        "q2": 1,
+        "q3": 1,
+        "q4": 1,
+        "q5": 1,
+        "q6": 0,
+        "q7": 0,
+        "q8": 0,
+        "q9": 0,
+        "q10": 0
+      },
+      "questionFeedback": {},
+      "score": 5,
+      "maxScore": 10,
+      "percentage": 50,
+      "passed": true,
+      "status": "Submitted",
+      "securityViolation": false,
+      "violationCount": 0,
+      "autoSubmitReason": "",
+      "startedAt": "2026-11-23T11:57:38.463Z",
+      "submittedAt": "2026-11-23T12:12:38.472Z",
+      "attemptedAt": "2026-11-23T12:12:38.472Z",
+      "evaluationStatus": "Pending Review",
+      "evaluatorRemarks": "Auto-evaluated submission awaiting examiner sign-off.",
+      "evaluatorName": "Automated Assessment Engine",
+      "isPublished": false
     }
   ],
   "notifications": [
@@ -2193,35 +2029,226 @@
     },
     {
       "id": "notif-1795433171952",
+      "type": "success",
       "title": "Exam Fee Payment Received",
       "message": "Your payment of ₹500 for NACAT Scholarship Assessment was successful (Ref: TXN-95555759). Please proceed to choose your examination date and time slot.",
-      "type": "success",
-      "targetStudentId": "EDU-2026-001",
-      "createdAt": "2026-11-23T11:26:11.952Z"
+      "createdAt": "2026-11-23T11:26:11.952Z",
+      "targetStudentId": "EDU-2026-001"
     },
     {
       "id": "notif-1795433171970",
+      "type": "info",
       "title": "Exam Slot Confirmed",
       "message": "Your examination for \"NACAT Scholarship Assessment\" is scheduled for 20 November 2026 at 10:00 AM. The examination portal will open strictly during your assigned slot.",
-      "type": "info",
-      "targetStudentId": "EDU-2026-001",
-      "createdAt": "2026-11-23T11:26:11.970Z"
+      "createdAt": "2026-11-23T11:26:11.970Z",
+      "targetStudentId": "EDU-2026-001"
     },
     {
       "id": "notif-1795433222761",
+      "type": "success",
       "title": "Exam Fee Payment Received",
       "message": "Your payment of ₹500 for NACAT Scholarship Assessment was successful (Ref: TXN-22812169). Please proceed to choose your examination date and time slot.",
-      "type": "success",
-      "targetStudentId": "EDU-2026-001",
-      "createdAt": "2026-11-23T11:27:02.761Z"
+      "createdAt": "2026-11-23T11:27:02.761Z",
+      "targetStudentId": "EDU-2026-001"
     },
     {
       "id": "notif-1795433222784",
+      "type": "info",
+      "title": "Exam Slot Confirmed",
+      "message": "Your examination for \"NACAT Scholarship Assessment\" is scheduled for 20 November 2026 at 10:00 AM. The examination portal will open strictly during your assigned slot.",
+      "createdAt": "2026-11-23T11:27:02.784Z",
+      "targetStudentId": "EDU-2026-001"
+    },
+    {
+      "id": "notif-1795435918056",
+      "type": "success",
+      "title": "Exam Fee Payment Received",
+      "message": "Your payment of ₹500 for NACAT Scholarship Assessment was successful (Ref: TXN-61877991). Please proceed to choose your examination date and time slot.",
+      "createdAt": "2026-11-23T12:11:58.056Z",
+      "targetStudentId": "EDU-2026-001"
+    },
+    {
+      "id": "notif-1795435918070",
+      "type": "info",
+      "title": "Exam Slot Confirmed",
+      "message": "Your examination for \"NACAT Scholarship Assessment\" is scheduled for 20 November 2026 at 10:00 AM. The examination portal will open strictly during your assigned slot.",
+      "createdAt": "2026-11-23T12:11:58.070Z",
+      "targetStudentId": "EDU-2026-001"
+    },
+    {
+      "id": "notif-1795435918139",
+      "type": "info",
+      "title": "Test Submitted Successfully",
+      "message": "Your responses for NACAT Scholarship Assessment have been recorded. Results will be published on 2026-11-25T10:00:00.000Z.",
+      "createdAt": "2026-11-23T12:11:58.139Z",
+      "targetStudentId": "EDU-2026-001"
+    },
+    {
+      "id": "notif-1795435958439",
+      "title": "Exam Fee Payment Received",
+      "message": "Your payment of ₹500 for NACAT Scholarship Assessment was successful (Ref: TXN-40285593). Please proceed to choose your examination date and time slot.",
+      "type": "success",
+      "targetStudentId": "EDU-2026-001",
+      "createdAt": "2026-11-23T12:12:38.439Z"
+    },
+    {
+      "id": "notif-1795435958455",
       "title": "Exam Slot Confirmed",
       "message": "Your examination for \"NACAT Scholarship Assessment\" is scheduled for 20 November 2026 at 10:00 AM. The examination portal will open strictly during your assigned slot.",
       "type": "info",
       "targetStudentId": "EDU-2026-001",
-      "createdAt": "2026-11-23T11:27:02.784Z"
+      "createdAt": "2026-11-23T12:12:38.455Z"
+    },
+    {
+      "id": "notif-1795435958472",
+      "title": "Test Submitted Successfully",
+      "message": "Your responses for NACAT Scholarship Assessment have been recorded. Results will be published on 2026-11-25T10:00:00.000Z.",
+      "type": "info",
+      "targetStudentId": "EDU-2026-001",
+      "createdAt": "2026-11-23T12:12:38.472Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-001",
+      "read": true,
+      "message": "Hello Aryan! I am your dedicated admissions counselor. Congratulations on registering with EduConnect. Please complete your assigned NACAT assessment exam so we can review your scorecard and recommend tailored college options.",
+      "senderId": "COUNSEL-001",
+      "studentId": "EDU-2026-001",
+      "timestamp": "2026-09-27T06:54:43.616Z",
+      "senderName": "Dr. Lakshmi Prasad (Counselor)",
+      "senderRole": "counsellor"
+    },
+    {
+      "id": "msg-1790829557234",
+      "read": false,
+      "message": "Hello! I have been assigned as your academic counselor at EduConnect India. Note: \"Excellent student, highly interested in computer engineering. Assigned state aptitude test.\" Feel free to reply with any questions regarding college admissions or test papers!",
+      "senderId": "COUNSEL-EDU-2026-001",
+      "studentId": "EDU-2026-001",
+      "timestamp": "2026-10-01T04:39:17.234Z",
+      "senderName": "Prof. Sandeep Rao",
+      "senderRole": "counsellor"
+    },
+    {
+      "id": "msg-1790829630196",
+      "read": false,
+      "message": "hi",
+      "senderId": "EDU-2026-001",
+      "studentId": "EDU-2026-001",
+      "timestamp": "2026-10-01T04:40:30.196Z",
+      "senderName": "Aryan Sharma",
+      "senderRole": "student"
+    }
+  ],
+  "users": [
+    {
+      "id": "EDU-2026-001",
+      "role": "student",
+      "status": "active",
+      "password": "password123",
+      "username": "STUDENT123",
+      "studentId": "EDU-2026-001"
+    },
+    {
+      "id": "ADMIN-001",
+      "role": "admin",
+      "email": "admin@educonnectindia.in",
+      "status": "active",
+      "fullName": "Prof. Rajesh Sengupta (Admissions Admin)",
+      "password": "Bharath@123",
+      "username": "admin"
+    },
+    {
+      "id": "user-1786892124687",
+      "role": "student",
+      "status": "active",
+      "password": "pass1428",
+      "username": "priyapatel36",
+      "studentId": "EDU-2026-0367"
+    },
+    {
+      "id": "SUPERADMIN-NEXORA",
+      "role": "super_admin",
+      "email": "nexoraeca@gmail.com",
+      "status": "active",
+      "fullName": "Dr. R. K. Varma (Chief Executive & Super Admin)",
+      "password": "Bharath@123",
+      "username": "nexoraeca@gmail.com",
+      "studentId": "EDU-2026-404"
+    },
+    {
+      "id": "COUNSEL-001",
+      "role": "counsellor",
+      "email": "lakshmi.prasad@educonnect.in",
+      "status": "active",
+      "fullName": "Dr. Lakshmi Prasad (Senior Academic Counselor)",
+      "password": "counsel123",
+      "username": "counsellor"
+    },
+    {
+      "id": "COUNSEL-002",
+      "role": "counsellor",
+      "email": "sandeep.rao@educonnect.in",
+      "status": "active",
+      "fullName": "Prof. Sandeep Rao (Engineering Counselor)",
+      "password": "counsel123",
+      "username": "counsellor2"
+    },
+    {
+      "id": "STUDENT-001",
+      "role": "student",
+      "email": "aryan@example.com",
+      "status": "active",
+      "fullName": "Aryan Sharma",
+      "password": "student123",
+      "username": "student",
+      "studentId": "EDU-2026-001",
+      "mustChangePassword": false
+    },
+    {
+      "id": "user-1790579945306",
+      "role": "student",
+      "email": "raviteja.test@example.com",
+      "status": "active",
+      "fullName": "Ravi Teja Verma",
+      "password": "MySecurePass#2026",
+      "username": "raviteja.test@example.com",
+      "createdAt": "2026-09-28T07:19:05.306Z",
+      "studentId": "EDU-2026-496",
+      "mustChangePassword": false
+    },
+    {
+      "id": "user-1790586216374",
+      "role": "student",
+      "email": "test.candidate@gmail.com",
+      "status": "active",
+      "fullName": "Test Candidate",
+      "password": "MyNewSecurePassword!2026",
+      "username": "test.candidate@gmail.com",
+      "createdAt": "2026-09-28T09:03:36.374Z",
+      "studentId": "EDU-2026-527",
+      "mustChangePassword": false
+    },
+    {
+      "id": "user-1790927420702",
+      "role": "student",
+      "email": "testuser99@example.com",
+      "status": "active",
+      "fullName": "Test User",
+      "password": "Stud@6755",
+      "username": "testuser99@example.com",
+      "createdAt": "2026-10-02T07:50:20.702Z",
+      "studentId": "EDU-2026-436",
+      "temporaryPassword": "Stud@6755",
+      "mustChangePassword": true
+    },
+    {
+      "id": "SUPERADMIN-002",
+      "role": "super_admin",
+      "email": "director@educonnectindia.in",
+      "fullName": "Dr. R. K. Varma (Chief Executive & Super Admin)",
+      "password": "superadmin123",
+      "username": "superadmin"
     }
   ],
   "passwordResetLogs": [

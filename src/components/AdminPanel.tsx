@@ -4880,9 +4880,9 @@ export default function AdminPanel({ userRole = 'super_admin', userName = 'Super
                     <span className="text-slate-400">Login ID:</span>
                     <span className="font-bold text-slate-950">{credsData.username}</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <span className="text-slate-400">Password:</span>
-                    <span className="font-bold text-slate-950">{credsData.password}</span>
+                    <span className="font-bold text-slate-950 font-mono">•••••••• (Dispatched securely)</span>
                   </div>
                 </div>
 
@@ -6110,8 +6110,8 @@ export default function AdminPanel({ userRole = 'super_admin', userName = 'Super
                       <label className="font-bold text-slate-700">Login Password</label>
                       <input 
                         required 
-                        type="text" 
-                        placeholder="e.g. pass123"
+                        type="password" 
+                        placeholder="Enter secure password"
                         value={userForm.password} 
                         onChange={(e) => setUserForm({ ...userForm, password: e.target.value })} 
                         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 outline-none font-mono focus:border-purple-600" 

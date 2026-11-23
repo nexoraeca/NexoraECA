@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { 
   ArrowLeft, ArrowRight, Lock, Mail, User, Eye, EyeOff, 
   ShieldCheck, Sparkles, GraduationCap, CheckCircle2, AlertCircle, 
-  Loader2, Key, HelpCircle, RefreshCw, Smartphone, Fingerprint,
+  Loader2, Key, HelpCircle, RefreshCw, Smartphone,
   Building, Award, Check
 } from 'lucide-react';
 import NexoraLogo from './NexoraLogo';
@@ -40,10 +40,6 @@ export default function SignInPage({
       : ''
   );
   const [showDomainAuthGuide, setShowDomainAuthGuide] = useState<boolean>(false);
-
-  // Biometric state
-  const [biometricScanning, setBiometricScanning] = useState<boolean>(false);
-  const [biometricStage, setBiometricStage] = useState<'scanning' | 'verifying' | 'granted'>('scanning');
 
   // In-page Password Recovery states (not a popup!)
   const [inPasswordRecovery, setInPasswordRecovery] = useState<boolean>(false);
@@ -100,22 +96,6 @@ export default function SignInPage({
       usernameInputRef.current.focus();
     }
   }, [prefill]);
-
-  // Demo autofill
-  const handleQuickDemo = (role: 'student' | 'counsellor' | 'admin') => {
-    setRoleTab(role);
-    setLoginError('');
-    if (role === 'student') {
-      setUsername('aryan@example.com');
-      setPassword('student123');
-    } else if (role === 'counsellor') {
-      setUsername('lakshmi@educonnect.in');
-      setPassword('counsel123');
-    } else if (role === 'admin') {
-      setUsername('nexoraeca@gmail.com');
-      setPassword('Bharath@123');
-    }
-  };
 
   const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -185,35 +165,6 @@ export default function SignInPage({
     } finally {
       setGoogleLoading(false);
     }
-  };
-
-  // Simulated Biometric Scan
-  const handleBiometricLogin = () => {
-    setBiometricScanning(true);
-    setBiometricStage('scanning');
-    setLoginError('');
-    setShowDomainAuthGuide(false);
-
-    setTimeout(() => {
-      setBiometricStage('verifying');
-      setTimeout(async () => {
-        setBiometricStage('granted');
-        setTimeout(async () => {
-          setBiometricScanning(false);
-          // Auto login as Aryan Sharma for demo touch
-          try {
-            const result = await safeLoginRequest('aryan@example.com', 'student123');
-            if (result.success && result.data) {
-              onLoginSuccess(result.data);
-            } else {
-              setLoginError('Biometric authentication failed.');
-            }
-          } catch (e) {
-            setLoginError('Biometric authentication failed.');
-          }
-        }, 600);
-      }, 900);
-    }, 900);
   };
 
   // Password Recovery Handlers (Google Firebase Free Service & In-Portal OTP)
@@ -460,33 +411,10 @@ export default function SignInPage({
                           type="text"
                           value={recoveryEmailOrUser}
                           onChange={(e) => setRecoveryEmailOrUser(e.target.value)}
-                          placeholder="e.g. aryan@example.com or student"
+                          placeholder="Enter your registered email address or login ID"
                           required
                           className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-10 pr-4 py-2.5 text-xs font-semibold text-slate-900 outline-none focus:border-[#0057D9] focus:bg-white focus:ring-1 focus:ring-[#0057D9] transition-all"
                         />
-                      </div>
-                    </div>
-
-                    {/* Quick Demo Fill Buttons */}
-                    <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 space-y-1.5">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
-                        Quick Account Fills:
-                      </span>
-                      <div className="flex flex-wrap gap-1.5">
-                        {[
-                          { label: 'Aryan (Student)', val: 'aryan@example.com' },
-                          { label: 'Dr. Lakshmi (Counselor)', val: 'lakshmi@educonnect.in' },
-                          { label: 'Admissions Admin', val: 'nexoraeca@gmail.com' }
-                        ].map(d => (
-                          <button
-                            key={d.val}
-                            type="button"
-                            onClick={() => setRecoveryEmailOrUser(d.val)}
-                            className="px-2 py-1 bg-white border border-slate-200 hover:border-blue-400 hover:text-blue-600 rounded-lg text-[10px] font-medium text-slate-600 transition-all cursor-pointer"
-                          >
-                            {d.label}
-                          </button>
-                        ))}
                       </div>
                     </div>
 
@@ -731,19 +659,6 @@ export default function SignInPage({
                       <li>Go to <strong>Authentication</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Authorized domains</strong>.</li>
                       <li>Click <strong>Add domain</strong> and enter: <code className="bg-amber-100 px-1 py-0.5 rounded font-mono font-bold text-amber-950">{typeof window !== 'undefined' ? window.location.hostname : 'your-domain'}</code></li>
                     </ol>
-                    <div className="pt-2 border-t border-amber-200/60 flex items-center justify-between text-[11px]">
-                      <span className="text-amber-700">Need immediate demo access?</span>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          const demo = authenticateLocally('aryan@example.com', 'student123');
-                          if (demo) onLoginSuccess(demo);
-                        }}
-                        className="font-bold text-[#0057D9] hover:underline cursor-pointer"
-                      >
-                        Skip &rarr; Continue as Student Demo
-                      </button>
-                    </div>
                   </div>
                 )}
 
@@ -766,8 +681,8 @@ export default function SignInPage({
                         }}
                         placeholder={
                           roleTab === 'student'
-                            ? 'e.g. aryan@example.com or EDU-2026-001'
-                            : 'Enter username or email'
+                            ? 'Enter Student ID or Registered Email'
+                            : 'Enter Username or Registered Email'
                         }
                         required
                         className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-10 pr-4 py-2.5 text-xs font-semibold text-slate-900 outline-none focus:border-[#0057D9] focus:bg-white focus:ring-1 focus:ring-[#0057D9] transition-all"
@@ -893,58 +808,8 @@ export default function SignInPage({
                   </button>
                 </form>
 
-                {/* Quick Demo Credentials */}
-                <div className="pt-2 border-t border-slate-100 space-y-2">
-                  <div className="flex items-center justify-between text-[11px] text-slate-400 font-bold uppercase tracking-wider">
-                    <span>Quick Demo Logins:</span>
-                    <button
-                      type="button"
-                      onClick={handleBiometricLogin}
-                      className="text-[#0057D9] hover:underline flex items-center gap-1 cursor-pointer"
-                    >
-                      <Fingerprint className="h-3 w-3" />
-                      <span>Touch ID</span>
-                    </button>
-                  </div>
-                  
-                  <div className="grid grid-cols-3 gap-2">
-                    <button
-                      type="button"
-                      onClick={() => handleQuickDemo('student')}
-                      className="p-2 bg-slate-50 hover:bg-blue-50 hover:border-blue-200 border border-slate-200 rounded-xl text-left transition-all cursor-pointer group"
-                    >
-                      <span className="text-[10px] font-bold text-slate-800 group-hover:text-blue-700 block truncate">
-                        Aryan (Student)
-                      </span>
-                      <span className="text-[9px] text-slate-400 block font-mono">student123</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => handleQuickDemo('counsellor')}
-                      className="p-2 bg-slate-50 hover:bg-blue-50 hover:border-blue-200 border border-slate-200 rounded-xl text-left transition-all cursor-pointer group"
-                    >
-                      <span className="text-[10px] font-bold text-slate-800 group-hover:text-blue-700 block truncate">
-                        Dr. Lakshmi
-                      </span>
-                      <span className="text-[9px] text-slate-400 block font-mono">counsel123</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => handleQuickDemo('admin')}
-                      className="p-2 bg-slate-50 hover:bg-blue-50 hover:border-blue-200 border border-slate-200 rounded-xl text-left transition-all cursor-pointer group"
-                    >
-                      <span className="text-[10px] font-bold text-slate-800 group-hover:text-blue-700 block truncate">
-                        Admissions Admin
-                      </span>
-                      <span className="text-[9px] text-slate-400 block font-mono">admin123</span>
-                    </button>
-                  </div>
-                </div>
-
                 {/* Apply Online Link */}
-                <div className="text-center pt-2">
+                <div className="text-center pt-4 border-t border-slate-100">
                   <p className="text-xs text-slate-500">
                     New intermediate or 12th student?{' '}
                     <button
@@ -957,24 +822,6 @@ export default function SignInPage({
                   </p>
                 </div>
 
-              </div>
-            )}
-
-            {/* Biometric Scanning Overlay */}
-            {biometricScanning && (
-              <div className="absolute inset-0 bg-slate-900/90 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center p-6 text-white z-20 space-y-4">
-                <div className="relative">
-                  <Fingerprint className="h-16 w-16 text-blue-400 animate-pulse" />
-                  <div className="absolute -inset-2 rounded-full border-2 border-blue-400/40 animate-ping" />
-                </div>
-                <div className="text-center space-y-1">
-                  <h4 className="text-sm font-bold">Biometric Touch Verification</h4>
-                  <p className="text-xs text-slate-400 font-mono">
-                    {biometricStage === 'scanning' && 'Scanning fingerprint sensor...'}
-                    {biometricStage === 'verifying' && 'Matching university credentials...'}
-                    {biometricStage === 'granted' && 'Access Granted! Redirecting...'}
-                  </p>
-                </div>
               </div>
             )}
 
