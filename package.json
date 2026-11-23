@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
+    "@neon/config": "^1.14.6",
+    "@neon/env": "^2.1.9",
+    "@neondatabase/serverless": "^1.2.1",
     "@sendgrid/mail": "^8.1.6",
     "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-react": "^5.0.4",
